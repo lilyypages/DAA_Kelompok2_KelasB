@@ -61,25 +61,25 @@ def generate_bem_graph(n_total, seed):
     return adj_list, node_data
 
 def main():
-    sizes = [375] # Ukuran graf yang diinginkan
+    n = 375 # Ukuran graf yang diinginkan
     my_seed = 121437  # Seed unik kamu
     
-    for i, n in enumerate(sizes):
-        adj_list, node_data = generate_bem_graph(n, my_seed + i)
+    
+    adj_list, node_data = generate_bem_graph(n, my_seed)
         
-        output_content = {
-            "project": "connected_components_social_graph",
-            "description": f"Graf BEM {n} nodes dengan Data Atribut",
-            "n_nodes": n,
-            "graph_adj": adj_list,   # <--- Ini untuk algoritma BFS/DFS (Jalan)
-            "node_data": node_data   # <--- Ini untuk data mahasiswa
-        }
+    output_content = {
+        "project": "connected_components_social_graph",
+        "description": f"Graf BEM {n} nodes dengan Data Atribut",
+        "n_nodes": n,
+        "graph_adj": adj_list,   # <--- Ini untuk algoritma BFS/DFS (Jalan)
+        "node_data": node_data   # <--- Ini untuk data mahasiswa
+    }
         
-        filename = f"data/social_graph_N{n}.json"
-        with open(filename, "w") as f:
-            json.dump(output_content, f, indent=2)
+    filename = f"data/social_graph_N{n}.json"
+    with open(filename, "w") as f:
+        json.dump(output_content, f, indent=2)
             
-        print(f"[OK] Berhasil membuat: {filename} (Lengkap dengan data mahasiswa)")
+    print(f"[OK] Berhasil membuat: {filename} (Lengkap dengan data mahasiswa)")
 
 if __name__ == "__main__":
     main()
