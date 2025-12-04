@@ -1,0 +1,3753 @@
+{
+  "project": "connected_components_social_graph",
+  "description": "Graf BEM 375 nodes dengan Data Atribut",
+  "n_nodes": 375,
+  "graph_adj": {
+    "0": [
+      1,
+      2,
+      3,
+      4,
+      7,
+      11,
+      14,
+      15,
+      17,
+      18,
+      20,
+      21,
+      22,
+      26,
+      29,
+      30,
+      34,
+      38,
+      43,
+      55,
+      63,
+      64,
+      65,
+      70,
+      80,
+      92,
+      121,
+      134,
+      135,
+      140
+    ],
+    "1": [
+      0,
+      8,
+      27,
+      50,
+      81
+    ],
+    "2": [
+      0,
+      10,
+      23,
+      35,
+      75
+    ],
+    "3": [
+      0,
+      5,
+      6,
+      9,
+      61,
+      74,
+      76,
+      125,
+      130,
+      146
+    ],
+    "4": [
+      0,
+      52,
+      84,
+      88,
+      106
+    ],
+    "5": [
+      3,
+      16,
+      19,
+      58
+    ],
+    "6": [
+      3,
+      109,
+      126
+    ],
+    "7": [
+      0
+    ],
+    "8": [
+      1,
+      12,
+      83
+    ],
+    "9": [
+      3
+    ],
+    "10": [
+      2,
+      13,
+      141,
+      142,
+      148
+    ],
+    "11": [
+      0,
+      93
+    ],
+    "12": [
+      8,
+      110
+    ],
+    "13": [
+      10,
+      28,
+      31,
+      68,
+      77,
+      116
+    ],
+    "14": [
+      0,
+      40,
+      42,
+      49,
+      59,
+      87,
+      100,
+      128,
+      136
+    ],
+    "15": [
+      0,
+      56
+    ],
+    "16": [
+      5,
+      37,
+      44
+    ],
+    "17": [
+      0,
+      102
+    ],
+    "18": [
+      0,
+      48,
+      86,
+      132,
+      137
+    ],
+    "19": [
+      5,
+      24,
+      32,
+      33,
+      57,
+      101
+    ],
+    "20": [
+      0,
+      25,
+      46,
+      60,
+      90
+    ],
+    "21": [
+      0,
+      144
+    ],
+    "22": [
+      0,
+      71,
+      120
+    ],
+    "23": [
+      2,
+      85
+    ],
+    "24": [
+      19,
+      67,
+      108,
+      114,
+      122
+    ],
+    "25": [
+      20
+    ],
+    "26": [
+      0,
+      39,
+      53,
+      94,
+      117
+    ],
+    "27": [
+      1,
+      95
+    ],
+    "28": [
+      13,
+      54,
+      99,
+      104
+    ],
+    "29": [
+      0,
+      36,
+      45
+    ],
+    "30": [
+      0,
+      47,
+      78,
+      107
+    ],
+    "31": [
+      13
+    ],
+    "32": [
+      19
+    ],
+    "33": [
+      19,
+      113,
+      143
+    ],
+    "34": [
+      0,
+      72,
+      98,
+      123,
+      124
+    ],
+    "35": [
+      2,
+      69,
+      73,
+      149
+    ],
+    "36": [
+      29
+    ],
+    "37": [
+      16,
+      41
+    ],
+    "38": [
+      0
+    ],
+    "39": [
+      26
+    ],
+    "40": [
+      14
+    ],
+    "41": [
+      37
+    ],
+    "42": [
+      14
+    ],
+    "43": [
+      0,
+      119
+    ],
+    "44": [
+      16,
+      82
+    ],
+    "45": [
+      29
+    ],
+    "46": [
+      20
+    ],
+    "47": [
+      30,
+      91
+    ],
+    "48": [
+      18,
+      51,
+      62,
+      97
+    ],
+    "49": [
+      14
+    ],
+    "50": [
+      1
+    ],
+    "51": [
+      48
+    ],
+    "52": [
+      4
+    ],
+    "53": [
+      26
+    ],
+    "54": [
+      28
+    ],
+    "55": [
+      0,
+      66
+    ],
+    "56": [
+      15
+    ],
+    "57": [
+      19
+    ],
+    "58": [
+      5
+    ],
+    "59": [
+      14,
+      96,
+      131
+    ],
+    "60": [
+      20
+    ],
+    "61": [
+      3,
+      112,
+      138,
+      147
+    ],
+    "62": [
+      48
+    ],
+    "63": [
+      0
+    ],
+    "64": [
+      0
+    ],
+    "65": [
+      0
+    ],
+    "66": [
+      55
+    ],
+    "67": [
+      24
+    ],
+    "68": [
+      13
+    ],
+    "69": [
+      35
+    ],
+    "70": [
+      0
+    ],
+    "71": [
+      22
+    ],
+    "72": [
+      34
+    ],
+    "73": [
+      35
+    ],
+    "74": [
+      3,
+      111
+    ],
+    "75": [
+      2,
+      89
+    ],
+    "76": [
+      3,
+      79
+    ],
+    "77": [
+      13,
+      105
+    ],
+    "78": [
+      30
+    ],
+    "79": [
+      76
+    ],
+    "80": [
+      0
+    ],
+    "81": [
+      1
+    ],
+    "82": [
+      44,
+      103
+    ],
+    "83": [
+      8
+    ],
+    "84": [
+      4
+    ],
+    "85": [
+      23
+    ],
+    "86": [
+      18,
+      115
+    ],
+    "87": [
+      14
+    ],
+    "88": [
+      4
+    ],
+    "89": [
+      75
+    ],
+    "90": [
+      20
+    ],
+    "91": [
+      47
+    ],
+    "92": [
+      0
+    ],
+    "93": [
+      11,
+      118
+    ],
+    "94": [
+      26,
+      127,
+      129
+    ],
+    "95": [
+      27
+    ],
+    "96": [
+      59
+    ],
+    "97": [
+      48
+    ],
+    "98": [
+      34
+    ],
+    "99": [
+      28
+    ],
+    "100": [
+      14
+    ],
+    "101": [
+      19
+    ],
+    "102": [
+      17
+    ],
+    "103": [
+      82,
+      139
+    ],
+    "104": [
+      28
+    ],
+    "105": [
+      77
+    ],
+    "106": [
+      4
+    ],
+    "107": [
+      30
+    ],
+    "108": [
+      24
+    ],
+    "109": [
+      6
+    ],
+    "110": [
+      12
+    ],
+    "111": [
+      74
+    ],
+    "112": [
+      61
+    ],
+    "113": [
+      33
+    ],
+    "114": [
+      24
+    ],
+    "115": [
+      86
+    ],
+    "116": [
+      13
+    ],
+    "117": [
+      26
+    ],
+    "118": [
+      93,
+      133
+    ],
+    "119": [
+      43
+    ],
+    "120": [
+      22
+    ],
+    "121": [
+      0
+    ],
+    "122": [
+      24
+    ],
+    "123": [
+      34
+    ],
+    "124": [
+      34,
+      145
+    ],
+    "125": [
+      3
+    ],
+    "126": [
+      6
+    ],
+    "127": [
+      94
+    ],
+    "128": [
+      14
+    ],
+    "129": [
+      94
+    ],
+    "130": [
+      3
+    ],
+    "131": [
+      59
+    ],
+    "132": [
+      18
+    ],
+    "133": [
+      118
+    ],
+    "134": [
+      0
+    ],
+    "135": [
+      0
+    ],
+    "136": [
+      14
+    ],
+    "137": [
+      18
+    ],
+    "138": [
+      61
+    ],
+    "139": [
+      103
+    ],
+    "140": [
+      0
+    ],
+    "141": [
+      10
+    ],
+    "142": [
+      10
+    ],
+    "143": [
+      33
+    ],
+    "144": [
+      21
+    ],
+    "145": [
+      124
+    ],
+    "146": [
+      3
+    ],
+    "147": [
+      61
+    ],
+    "148": [
+      10
+    ],
+    "149": [
+      35
+    ],
+    "150": [
+      151
+    ],
+    "151": [
+      150,
+      152,
+      154,
+      155,
+      156,
+      157,
+      167,
+      173,
+      174,
+      201,
+      204,
+      213,
+      245,
+      263,
+      278
+    ],
+    "152": [
+      151,
+      153,
+      159,
+      169,
+      196,
+      208,
+      237,
+      247,
+      266,
+      267,
+      277
+    ],
+    "153": [
+      152
+    ],
+    "154": [
+      151
+    ],
+    "155": [
+      151
+    ],
+    "156": [
+      151,
+      158,
+      170,
+      188,
+      211,
+      231,
+      233,
+      242
+    ],
+    "157": [
+      151,
+      191,
+      205,
+      212,
+      214,
+      215,
+      224,
+      226,
+      229,
+      257
+    ],
+    "158": [
+      156,
+      160,
+      162,
+      171,
+      176,
+      199,
+      202,
+      222,
+      228,
+      232,
+      236,
+      268
+    ],
+    "159": [
+      152
+    ],
+    "160": [
+      158,
+      161,
+      195,
+      241,
+      243
+    ],
+    "161": [
+      160,
+      163,
+      166,
+      185,
+      262
+    ],
+    "162": [
+      158,
+      164,
+      165,
+      239,
+      275
+    ],
+    "163": [
+      161
+    ],
+    "164": [
+      162,
+      250
+    ],
+    "165": [
+      162,
+      198
+    ],
+    "166": [
+      161,
+      179,
+      207
+    ],
+    "167": [
+      151,
+      168,
+      177,
+      178,
+      182,
+      184,
+      187,
+      193,
+      206,
+      216,
+      234,
+      246,
+      252,
+      265
+    ],
+    "168": [
+      167,
+      180,
+      259
+    ],
+    "169": [
+      152,
+      225,
+      248,
+      273
+    ],
+    "170": [
+      156,
+      172
+    ],
+    "171": [
+      158,
+      210,
+      217,
+      249
+    ],
+    "172": [
+      170,
+      175,
+      183,
+      203,
+      221,
+      255
+    ],
+    "173": [
+      151,
+      181,
+      197,
+      230,
+      261
+    ],
+    "174": [
+      151
+    ],
+    "175": [
+      172,
+      220,
+      244
+    ],
+    "176": [
+      158
+    ],
+    "177": [
+      167,
+      186
+    ],
+    "178": [
+      167
+    ],
+    "179": [
+      166
+    ],
+    "180": [
+      168
+    ],
+    "181": [
+      173
+    ],
+    "182": [
+      167,
+      269
+    ],
+    "183": [
+      172
+    ],
+    "184": [
+      167,
+      227,
+      276
+    ],
+    "185": [
+      161,
+      218
+    ],
+    "186": [
+      177,
+      194
+    ],
+    "187": [
+      167,
+      189,
+      192
+    ],
+    "188": [
+      156
+    ],
+    "189": [
+      187,
+      190
+    ],
+    "190": [
+      189
+    ],
+    "191": [
+      157,
+      253
+    ],
+    "192": [
+      187,
+      209
+    ],
+    "193": [
+      167,
+      240
+    ],
+    "194": [
+      186
+    ],
+    "195": [
+      160
+    ],
+    "196": [
+      152,
+      256
+    ],
+    "197": [
+      173
+    ],
+    "198": [
+      165,
+      200,
+      219,
+      272,
+      280
+    ],
+    "199": [
+      158
+    ],
+    "200": [
+      198,
+      235,
+      251
+    ],
+    "201": [
+      151
+    ],
+    "202": [
+      158,
+      270
+    ],
+    "203": [
+      172
+    ],
+    "204": [
+      151,
+      274
+    ],
+    "205": [
+      157
+    ],
+    "206": [
+      167
+    ],
+    "207": [
+      166
+    ],
+    "208": [
+      152
+    ],
+    "209": [
+      192,
+      271
+    ],
+    "210": [
+      171
+    ],
+    "211": [
+      156,
+      254
+    ],
+    "212": [
+      157
+    ],
+    "213": [
+      151,
+      258
+    ],
+    "214": [
+      157
+    ],
+    "215": [
+      157
+    ],
+    "216": [
+      167
+    ],
+    "217": [
+      171
+    ],
+    "218": [
+      185,
+      223
+    ],
+    "219": [
+      198
+    ],
+    "220": [
+      175
+    ],
+    "221": [
+      172
+    ],
+    "222": [
+      158
+    ],
+    "223": [
+      218
+    ],
+    "224": [
+      157
+    ],
+    "225": [
+      169
+    ],
+    "226": [
+      157
+    ],
+    "227": [
+      184
+    ],
+    "228": [
+      158
+    ],
+    "229": [
+      157,
+      260
+    ],
+    "230": [
+      173
+    ],
+    "231": [
+      156
+    ],
+    "232": [
+      158
+    ],
+    "233": [
+      156
+    ],
+    "234": [
+      167
+    ],
+    "235": [
+      200
+    ],
+    "236": [
+      158
+    ],
+    "237": [
+      152,
+      238
+    ],
+    "238": [
+      237
+    ],
+    "239": [
+      162
+    ],
+    "240": [
+      193
+    ],
+    "241": [
+      160
+    ],
+    "242": [
+      156
+    ],
+    "243": [
+      160
+    ],
+    "244": [
+      175
+    ],
+    "245": [
+      151
+    ],
+    "246": [
+      167
+    ],
+    "247": [
+      152
+    ],
+    "248": [
+      169
+    ],
+    "249": [
+      171
+    ],
+    "250": [
+      164
+    ],
+    "251": [
+      200
+    ],
+    "252": [
+      167,
+      279
+    ],
+    "253": [
+      191
+    ],
+    "254": [
+      211,
+      264
+    ],
+    "255": [
+      172
+    ],
+    "256": [
+      196
+    ],
+    "257": [
+      157
+    ],
+    "258": [
+      213
+    ],
+    "259": [
+      168
+    ],
+    "260": [
+      229
+    ],
+    "261": [
+      173
+    ],
+    "262": [
+      161
+    ],
+    "263": [
+      151
+    ],
+    "264": [
+      254
+    ],
+    "265": [
+      167
+    ],
+    "266": [
+      152
+    ],
+    "267": [
+      152
+    ],
+    "268": [
+      158
+    ],
+    "269": [
+      182
+    ],
+    "270": [
+      202
+    ],
+    "271": [
+      209
+    ],
+    "272": [
+      198
+    ],
+    "273": [
+      169
+    ],
+    "274": [
+      204
+    ],
+    "275": [
+      162
+    ],
+    "276": [
+      184
+    ],
+    "277": [
+      152
+    ],
+    "278": [
+      151
+    ],
+    "279": [
+      252
+    ],
+    "280": [
+      198
+    ],
+    "281": [
+      282,
+      283,
+      286,
+      288,
+      292,
+      294,
+      296,
+      302,
+      307,
+      308,
+      352,
+      356,
+      362
+    ],
+    "282": [
+      281,
+      284,
+      285,
+      289,
+      290,
+      291,
+      293,
+      298,
+      301,
+      304,
+      305,
+      323,
+      329,
+      341,
+      351,
+      355,
+      363,
+      365
+    ],
+    "283": [
+      281,
+      299,
+      312
+    ],
+    "284": [
+      282,
+      327,
+      345
+    ],
+    "285": [
+      282
+    ],
+    "286": [
+      281,
+      287
+    ],
+    "287": [
+      286,
+      300,
+      309,
+      368
+    ],
+    "288": [
+      281,
+      303,
+      332,
+      366
+    ],
+    "289": [
+      282,
+      316,
+      367
+    ],
+    "290": [
+      282
+    ],
+    "291": [
+      282,
+      297,
+      314,
+      328,
+      330,
+      354,
+      357,
+      370
+    ],
+    "292": [
+      281,
+      295
+    ],
+    "293": [
+      282
+    ],
+    "294": [
+      281
+    ],
+    "295": [
+      292
+    ],
+    "296": [
+      281,
+      344,
+      346
+    ],
+    "297": [
+      291,
+      317
+    ],
+    "298": [
+      282,
+      337,
+      339
+    ],
+    "299": [
+      283,
+      319,
+      350
+    ],
+    "300": [
+      287
+    ],
+    "301": [
+      282,
+      310,
+      336
+    ],
+    "302": [
+      281
+    ],
+    "303": [
+      288
+    ],
+    "304": [
+      282,
+      315,
+      325,
+      331,
+      353,
+      372,
+      373
+    ],
+    "305": [
+      282,
+      306,
+      311,
+      318,
+      321,
+      326,
+      334,
+      335,
+      340,
+      369
+    ],
+    "306": [
+      305
+    ],
+    "307": [
+      281
+    ],
+    "308": [
+      281,
+      343,
+      349
+    ],
+    "309": [
+      287,
+      333
+    ],
+    "310": [
+      301,
+      371
+    ],
+    "311": [
+      305,
+      313
+    ],
+    "312": [
+      283
+    ],
+    "313": [
+      311,
+      347
+    ],
+    "314": [
+      291
+    ],
+    "315": [
+      304
+    ],
+    "316": [
+      289
+    ],
+    "317": [
+      297
+    ],
+    "318": [
+      305
+    ],
+    "319": [
+      299,
+      320,
+      324,
+      358,
+      361
+    ],
+    "320": [
+      319,
+      322
+    ],
+    "321": [
+      305
+    ],
+    "322": [
+      320
+    ],
+    "323": [
+      282,
+      338
+    ],
+    "324": [
+      319
+    ],
+    "325": [
+      304,
+      342,
+      364
+    ],
+    "326": [
+      305
+    ],
+    "327": [
+      284,
+      348
+    ],
+    "328": [
+      291
+    ],
+    "329": [
+      282
+    ],
+    "330": [
+      291
+    ],
+    "331": [
+      304
+    ],
+    "332": [
+      288
+    ],
+    "333": [
+      309
+    ],
+    "334": [
+      305
+    ],
+    "335": [
+      305
+    ],
+    "336": [
+      301
+    ],
+    "337": [
+      298
+    ],
+    "338": [
+      323
+    ],
+    "339": [
+      298
+    ],
+    "340": [
+      305,
+      359
+    ],
+    "341": [
+      282,
+      360
+    ],
+    "342": [
+      325
+    ],
+    "343": [
+      308
+    ],
+    "344": [
+      296
+    ],
+    "345": [
+      284
+    ],
+    "346": [
+      296
+    ],
+    "347": [
+      313
+    ],
+    "348": [
+      327
+    ],
+    "349": [
+      308
+    ],
+    "350": [
+      299
+    ],
+    "351": [
+      282
+    ],
+    "352": [
+      281
+    ],
+    "353": [
+      304
+    ],
+    "354": [
+      291
+    ],
+    "355": [
+      282
+    ],
+    "356": [
+      281
+    ],
+    "357": [
+      291
+    ],
+    "358": [
+      319
+    ],
+    "359": [
+      340
+    ],
+    "360": [
+      341
+    ],
+    "361": [
+      319
+    ],
+    "362": [
+      281
+    ],
+    "363": [
+      282
+    ],
+    "364": [
+      325,
+      374
+    ],
+    "365": [
+      282
+    ],
+    "366": [
+      288
+    ],
+    "367": [
+      289
+    ],
+    "368": [
+      287
+    ],
+    "369": [
+      305
+    ],
+    "370": [
+      291
+    ],
+    "371": [
+      310
+    ],
+    "372": [
+      304
+    ],
+    "373": [
+      304
+    ],
+    "374": [
+      364
+    ]
+  },
+  "node_data": {
+    "0": {
+      "nama": "Mahasiswa_0",
+      "divisi": "Divisi Acara",
+      "jabatan": "Ketua Divisi",
+      "ipk": 2.76
+    },
+    "1": {
+      "nama": "Mahasiswa_1",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 2.55
+    },
+    "2": {
+      "nama": "Mahasiswa_2",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.01
+    },
+    "3": {
+      "nama": "Mahasiswa_3",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 2.93
+    },
+    "4": {
+      "nama": "Mahasiswa_4",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 2.63
+    },
+    "5": {
+      "nama": "Mahasiswa_5",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.97
+    },
+    "6": {
+      "nama": "Mahasiswa_6",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.49
+    },
+    "7": {
+      "nama": "Mahasiswa_7",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.84
+    },
+    "8": {
+      "nama": "Mahasiswa_8",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.41
+    },
+    "9": {
+      "nama": "Mahasiswa_9",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.1
+    },
+    "10": {
+      "nama": "Mahasiswa_10",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.96
+    },
+    "11": {
+      "nama": "Mahasiswa_11",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.67
+    },
+    "12": {
+      "nama": "Mahasiswa_12",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.12
+    },
+    "13": {
+      "nama": "Mahasiswa_13",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.98
+    },
+    "14": {
+      "nama": "Mahasiswa_14",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.26
+    },
+    "15": {
+      "nama": "Mahasiswa_15",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 2.79
+    },
+    "16": {
+      "nama": "Mahasiswa_16",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.92
+    },
+    "17": {
+      "nama": "Mahasiswa_17",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.37
+    },
+    "18": {
+      "nama": "Mahasiswa_18",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 2.8
+    },
+    "19": {
+      "nama": "Mahasiswa_19",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.11
+    },
+    "20": {
+      "nama": "Mahasiswa_20",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.5
+    },
+    "21": {
+      "nama": "Mahasiswa_21",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 2.56
+    },
+    "22": {
+      "nama": "Mahasiswa_22",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.39
+    },
+    "23": {
+      "nama": "Mahasiswa_23",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 2.83
+    },
+    "24": {
+      "nama": "Mahasiswa_24",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.45
+    },
+    "25": {
+      "nama": "Mahasiswa_25",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.56
+    },
+    "26": {
+      "nama": "Mahasiswa_26",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.6
+    },
+    "27": {
+      "nama": "Mahasiswa_27",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.82
+    },
+    "28": {
+      "nama": "Mahasiswa_28",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 2.87
+    },
+    "29": {
+      "nama": "Mahasiswa_29",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.56
+    },
+    "30": {
+      "nama": "Mahasiswa_30",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.87
+    },
+    "31": {
+      "nama": "Mahasiswa_31",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.1
+    },
+    "32": {
+      "nama": "Mahasiswa_32",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.77
+    },
+    "33": {
+      "nama": "Mahasiswa_33",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 2.82
+    },
+    "34": {
+      "nama": "Mahasiswa_34",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.37
+    },
+    "35": {
+      "nama": "Mahasiswa_35",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 2.55
+    },
+    "36": {
+      "nama": "Mahasiswa_36",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.32
+    },
+    "37": {
+      "nama": "Mahasiswa_37",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.2
+    },
+    "38": {
+      "nama": "Mahasiswa_38",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.8
+    },
+    "39": {
+      "nama": "Mahasiswa_39",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.99
+    },
+    "40": {
+      "nama": "Mahasiswa_40",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.62
+    },
+    "41": {
+      "nama": "Mahasiswa_41",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.1
+    },
+    "42": {
+      "nama": "Mahasiswa_42",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 2.53
+    },
+    "43": {
+      "nama": "Mahasiswa_43",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.24
+    },
+    "44": {
+      "nama": "Mahasiswa_44",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.47
+    },
+    "45": {
+      "nama": "Mahasiswa_45",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 2.6
+    },
+    "46": {
+      "nama": "Mahasiswa_46",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 2.98
+    },
+    "47": {
+      "nama": "Mahasiswa_47",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 2.67
+    },
+    "48": {
+      "nama": "Mahasiswa_48",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 2.78
+    },
+    "49": {
+      "nama": "Mahasiswa_49",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.54
+    },
+    "50": {
+      "nama": "Mahasiswa_50",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.54
+    },
+    "51": {
+      "nama": "Mahasiswa_51",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.89
+    },
+    "52": {
+      "nama": "Mahasiswa_52",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.51
+    },
+    "53": {
+      "nama": "Mahasiswa_53",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.47
+    },
+    "54": {
+      "nama": "Mahasiswa_54",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 2.76
+    },
+    "55": {
+      "nama": "Mahasiswa_55",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.6
+    },
+    "56": {
+      "nama": "Mahasiswa_56",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.7
+    },
+    "57": {
+      "nama": "Mahasiswa_57",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.4
+    },
+    "58": {
+      "nama": "Mahasiswa_58",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 2.53
+    },
+    "59": {
+      "nama": "Mahasiswa_59",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 2.85
+    },
+    "60": {
+      "nama": "Mahasiswa_60",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 2.69
+    },
+    "61": {
+      "nama": "Mahasiswa_61",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.01
+    },
+    "62": {
+      "nama": "Mahasiswa_62",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.1
+    },
+    "63": {
+      "nama": "Mahasiswa_63",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 2.71
+    },
+    "64": {
+      "nama": "Mahasiswa_64",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 2.96
+    },
+    "65": {
+      "nama": "Mahasiswa_65",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.37
+    },
+    "66": {
+      "nama": "Mahasiswa_66",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 2.73
+    },
+    "67": {
+      "nama": "Mahasiswa_67",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.62
+    },
+    "68": {
+      "nama": "Mahasiswa_68",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.56
+    },
+    "69": {
+      "nama": "Mahasiswa_69",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 2.84
+    },
+    "70": {
+      "nama": "Mahasiswa_70",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 2.62
+    },
+    "71": {
+      "nama": "Mahasiswa_71",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 2.81
+    },
+    "72": {
+      "nama": "Mahasiswa_72",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.19
+    },
+    "73": {
+      "nama": "Mahasiswa_73",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.22
+    },
+    "74": {
+      "nama": "Mahasiswa_74",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.75
+    },
+    "75": {
+      "nama": "Mahasiswa_75",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.18
+    },
+    "76": {
+      "nama": "Mahasiswa_76",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 2.7
+    },
+    "77": {
+      "nama": "Mahasiswa_77",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 2.83
+    },
+    "78": {
+      "nama": "Mahasiswa_78",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.52
+    },
+    "79": {
+      "nama": "Mahasiswa_79",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 2.78
+    },
+    "80": {
+      "nama": "Mahasiswa_80",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 2.64
+    },
+    "81": {
+      "nama": "Mahasiswa_81",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.21
+    },
+    "82": {
+      "nama": "Mahasiswa_82",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 2.78
+    },
+    "83": {
+      "nama": "Mahasiswa_83",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.91
+    },
+    "84": {
+      "nama": "Mahasiswa_84",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.11
+    },
+    "85": {
+      "nama": "Mahasiswa_85",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.59
+    },
+    "86": {
+      "nama": "Mahasiswa_86",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 2.75
+    },
+    "87": {
+      "nama": "Mahasiswa_87",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 2.78
+    },
+    "88": {
+      "nama": "Mahasiswa_88",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 2.9
+    },
+    "89": {
+      "nama": "Mahasiswa_89",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.77
+    },
+    "90": {
+      "nama": "Mahasiswa_90",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.18
+    },
+    "91": {
+      "nama": "Mahasiswa_91",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.77
+    },
+    "92": {
+      "nama": "Mahasiswa_92",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 2.85
+    },
+    "93": {
+      "nama": "Mahasiswa_93",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.29
+    },
+    "94": {
+      "nama": "Mahasiswa_94",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.37
+    },
+    "95": {
+      "nama": "Mahasiswa_95",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.93
+    },
+    "96": {
+      "nama": "Mahasiswa_96",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.6
+    },
+    "97": {
+      "nama": "Mahasiswa_97",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 2.88
+    },
+    "98": {
+      "nama": "Mahasiswa_98",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.24
+    },
+    "99": {
+      "nama": "Mahasiswa_99",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 2.78
+    },
+    "100": {
+      "nama": "Mahasiswa_100",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.43
+    },
+    "101": {
+      "nama": "Mahasiswa_101",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 2.51
+    },
+    "102": {
+      "nama": "Mahasiswa_102",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 2.56
+    },
+    "103": {
+      "nama": "Mahasiswa_103",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.32
+    },
+    "104": {
+      "nama": "Mahasiswa_104",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 2.62
+    },
+    "105": {
+      "nama": "Mahasiswa_105",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.44
+    },
+    "106": {
+      "nama": "Mahasiswa_106",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.55
+    },
+    "107": {
+      "nama": "Mahasiswa_107",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.23
+    },
+    "108": {
+      "nama": "Mahasiswa_108",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.57
+    },
+    "109": {
+      "nama": "Mahasiswa_109",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 2.86
+    },
+    "110": {
+      "nama": "Mahasiswa_110",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 2.9
+    },
+    "111": {
+      "nama": "Mahasiswa_111",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.03
+    },
+    "112": {
+      "nama": "Mahasiswa_112",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 2.69
+    },
+    "113": {
+      "nama": "Mahasiswa_113",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.48
+    },
+    "114": {
+      "nama": "Mahasiswa_114",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.6
+    },
+    "115": {
+      "nama": "Mahasiswa_115",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 2.75
+    },
+    "116": {
+      "nama": "Mahasiswa_116",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.21
+    },
+    "117": {
+      "nama": "Mahasiswa_117",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 2.67
+    },
+    "118": {
+      "nama": "Mahasiswa_118",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 2.92
+    },
+    "119": {
+      "nama": "Mahasiswa_119",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.53
+    },
+    "120": {
+      "nama": "Mahasiswa_120",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.33
+    },
+    "121": {
+      "nama": "Mahasiswa_121",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.01
+    },
+    "122": {
+      "nama": "Mahasiswa_122",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.78
+    },
+    "123": {
+      "nama": "Mahasiswa_123",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 2.56
+    },
+    "124": {
+      "nama": "Mahasiswa_124",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 2.98
+    },
+    "125": {
+      "nama": "Mahasiswa_125",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.33
+    },
+    "126": {
+      "nama": "Mahasiswa_126",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 2.81
+    },
+    "127": {
+      "nama": "Mahasiswa_127",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.16
+    },
+    "128": {
+      "nama": "Mahasiswa_128",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 2.53
+    },
+    "129": {
+      "nama": "Mahasiswa_129",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.92
+    },
+    "130": {
+      "nama": "Mahasiswa_130",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.19
+    },
+    "131": {
+      "nama": "Mahasiswa_131",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 2.66
+    },
+    "132": {
+      "nama": "Mahasiswa_132",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.7
+    },
+    "133": {
+      "nama": "Mahasiswa_133",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.25
+    },
+    "134": {
+      "nama": "Mahasiswa_134",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.47
+    },
+    "135": {
+      "nama": "Mahasiswa_135",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.35
+    },
+    "136": {
+      "nama": "Mahasiswa_136",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.84
+    },
+    "137": {
+      "nama": "Mahasiswa_137",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.69
+    },
+    "138": {
+      "nama": "Mahasiswa_138",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.76
+    },
+    "139": {
+      "nama": "Mahasiswa_139",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 2.52
+    },
+    "140": {
+      "nama": "Mahasiswa_140",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.62
+    },
+    "141": {
+      "nama": "Mahasiswa_141",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 2.5
+    },
+    "142": {
+      "nama": "Mahasiswa_142",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.14
+    },
+    "143": {
+      "nama": "Mahasiswa_143",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 2.85
+    },
+    "144": {
+      "nama": "Mahasiswa_144",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 2.9
+    },
+    "145": {
+      "nama": "Mahasiswa_145",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.93
+    },
+    "146": {
+      "nama": "Mahasiswa_146",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.43
+    },
+    "147": {
+      "nama": "Mahasiswa_147",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 2.75
+    },
+    "148": {
+      "nama": "Mahasiswa_148",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.31
+    },
+    "149": {
+      "nama": "Mahasiswa_149",
+      "divisi": "Divisi Acara",
+      "jabatan": "Staff",
+      "ipk": 3.31
+    },
+    "150": {
+      "nama": "Mahasiswa_150",
+      "divisi": "Divisi Humas",
+      "jabatan": "Ketua Divisi",
+      "ipk": 2.55
+    },
+    "151": {
+      "nama": "Mahasiswa_151",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 2.6
+    },
+    "152": {
+      "nama": "Mahasiswa_152",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 2.9
+    },
+    "153": {
+      "nama": "Mahasiswa_153",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.55
+    },
+    "154": {
+      "nama": "Mahasiswa_154",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.37
+    },
+    "155": {
+      "nama": "Mahasiswa_155",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 2.97
+    },
+    "156": {
+      "nama": "Mahasiswa_156",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.58
+    },
+    "157": {
+      "nama": "Mahasiswa_157",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 2.74
+    },
+    "158": {
+      "nama": "Mahasiswa_158",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.56
+    },
+    "159": {
+      "nama": "Mahasiswa_159",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.05
+    },
+    "160": {
+      "nama": "Mahasiswa_160",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.11
+    },
+    "161": {
+      "nama": "Mahasiswa_161",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 2.89
+    },
+    "162": {
+      "nama": "Mahasiswa_162",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.14
+    },
+    "163": {
+      "nama": "Mahasiswa_163",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.24
+    },
+    "164": {
+      "nama": "Mahasiswa_164",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.28
+    },
+    "165": {
+      "nama": "Mahasiswa_165",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.43
+    },
+    "166": {
+      "nama": "Mahasiswa_166",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.37
+    },
+    "167": {
+      "nama": "Mahasiswa_167",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.21
+    },
+    "168": {
+      "nama": "Mahasiswa_168",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.72
+    },
+    "169": {
+      "nama": "Mahasiswa_169",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.05
+    },
+    "170": {
+      "nama": "Mahasiswa_170",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 2.76
+    },
+    "171": {
+      "nama": "Mahasiswa_171",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.68
+    },
+    "172": {
+      "nama": "Mahasiswa_172",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.48
+    },
+    "173": {
+      "nama": "Mahasiswa_173",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.61
+    },
+    "174": {
+      "nama": "Mahasiswa_174",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 2.97
+    },
+    "175": {
+      "nama": "Mahasiswa_175",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.16
+    },
+    "176": {
+      "nama": "Mahasiswa_176",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.95
+    },
+    "177": {
+      "nama": "Mahasiswa_177",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.85
+    },
+    "178": {
+      "nama": "Mahasiswa_178",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.17
+    },
+    "179": {
+      "nama": "Mahasiswa_179",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.24
+    },
+    "180": {
+      "nama": "Mahasiswa_180",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.62
+    },
+    "181": {
+      "nama": "Mahasiswa_181",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.72
+    },
+    "182": {
+      "nama": "Mahasiswa_182",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 2.8
+    },
+    "183": {
+      "nama": "Mahasiswa_183",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 2.99
+    },
+    "184": {
+      "nama": "Mahasiswa_184",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.03
+    },
+    "185": {
+      "nama": "Mahasiswa_185",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.2
+    },
+    "186": {
+      "nama": "Mahasiswa_186",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.8
+    },
+    "187": {
+      "nama": "Mahasiswa_187",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.95
+    },
+    "188": {
+      "nama": "Mahasiswa_188",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.6
+    },
+    "189": {
+      "nama": "Mahasiswa_189",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 2.75
+    },
+    "190": {
+      "nama": "Mahasiswa_190",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.95
+    },
+    "191": {
+      "nama": "Mahasiswa_191",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.06
+    },
+    "192": {
+      "nama": "Mahasiswa_192",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.05
+    },
+    "193": {
+      "nama": "Mahasiswa_193",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.8
+    },
+    "194": {
+      "nama": "Mahasiswa_194",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.62
+    },
+    "195": {
+      "nama": "Mahasiswa_195",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 2.88
+    },
+    "196": {
+      "nama": "Mahasiswa_196",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.6
+    },
+    "197": {
+      "nama": "Mahasiswa_197",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.18
+    },
+    "198": {
+      "nama": "Mahasiswa_198",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.47
+    },
+    "199": {
+      "nama": "Mahasiswa_199",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 2.53
+    },
+    "200": {
+      "nama": "Mahasiswa_200",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 2.58
+    },
+    "201": {
+      "nama": "Mahasiswa_201",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.9
+    },
+    "202": {
+      "nama": "Mahasiswa_202",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.58
+    },
+    "203": {
+      "nama": "Mahasiswa_203",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.28
+    },
+    "204": {
+      "nama": "Mahasiswa_204",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 2.81
+    },
+    "205": {
+      "nama": "Mahasiswa_205",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.2
+    },
+    "206": {
+      "nama": "Mahasiswa_206",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.76
+    },
+    "207": {
+      "nama": "Mahasiswa_207",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.54
+    },
+    "208": {
+      "nama": "Mahasiswa_208",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.14
+    },
+    "209": {
+      "nama": "Mahasiswa_209",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.56
+    },
+    "210": {
+      "nama": "Mahasiswa_210",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.07
+    },
+    "211": {
+      "nama": "Mahasiswa_211",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.9
+    },
+    "212": {
+      "nama": "Mahasiswa_212",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.92
+    },
+    "213": {
+      "nama": "Mahasiswa_213",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.88
+    },
+    "214": {
+      "nama": "Mahasiswa_214",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.21
+    },
+    "215": {
+      "nama": "Mahasiswa_215",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.53
+    },
+    "216": {
+      "nama": "Mahasiswa_216",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.72
+    },
+    "217": {
+      "nama": "Mahasiswa_217",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.6
+    },
+    "218": {
+      "nama": "Mahasiswa_218",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.13
+    },
+    "219": {
+      "nama": "Mahasiswa_219",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.89
+    },
+    "220": {
+      "nama": "Mahasiswa_220",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 2.51
+    },
+    "221": {
+      "nama": "Mahasiswa_221",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.03
+    },
+    "222": {
+      "nama": "Mahasiswa_222",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.01
+    },
+    "223": {
+      "nama": "Mahasiswa_223",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.86
+    },
+    "224": {
+      "nama": "Mahasiswa_224",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 2.64
+    },
+    "225": {
+      "nama": "Mahasiswa_225",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.99
+    },
+    "226": {
+      "nama": "Mahasiswa_226",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.72
+    },
+    "227": {
+      "nama": "Mahasiswa_227",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.55
+    },
+    "228": {
+      "nama": "Mahasiswa_228",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.04
+    },
+    "229": {
+      "nama": "Mahasiswa_229",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.29
+    },
+    "230": {
+      "nama": "Mahasiswa_230",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 2.57
+    },
+    "231": {
+      "nama": "Mahasiswa_231",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.68
+    },
+    "232": {
+      "nama": "Mahasiswa_232",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 2.89
+    },
+    "233": {
+      "nama": "Mahasiswa_233",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 2.97
+    },
+    "234": {
+      "nama": "Mahasiswa_234",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.46
+    },
+    "235": {
+      "nama": "Mahasiswa_235",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 2.77
+    },
+    "236": {
+      "nama": "Mahasiswa_236",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 2.59
+    },
+    "237": {
+      "nama": "Mahasiswa_237",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.97
+    },
+    "238": {
+      "nama": "Mahasiswa_238",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.18
+    },
+    "239": {
+      "nama": "Mahasiswa_239",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 2.54
+    },
+    "240": {
+      "nama": "Mahasiswa_240",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 2.56
+    },
+    "241": {
+      "nama": "Mahasiswa_241",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 2.54
+    },
+    "242": {
+      "nama": "Mahasiswa_242",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.8
+    },
+    "243": {
+      "nama": "Mahasiswa_243",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.96
+    },
+    "244": {
+      "nama": "Mahasiswa_244",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.05
+    },
+    "245": {
+      "nama": "Mahasiswa_245",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 2.93
+    },
+    "246": {
+      "nama": "Mahasiswa_246",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 2.75
+    },
+    "247": {
+      "nama": "Mahasiswa_247",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.1
+    },
+    "248": {
+      "nama": "Mahasiswa_248",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.46
+    },
+    "249": {
+      "nama": "Mahasiswa_249",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.42
+    },
+    "250": {
+      "nama": "Mahasiswa_250",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.8
+    },
+    "251": {
+      "nama": "Mahasiswa_251",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.62
+    },
+    "252": {
+      "nama": "Mahasiswa_252",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.85
+    },
+    "253": {
+      "nama": "Mahasiswa_253",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.16
+    },
+    "254": {
+      "nama": "Mahasiswa_254",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 2.7
+    },
+    "255": {
+      "nama": "Mahasiswa_255",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 2.57
+    },
+    "256": {
+      "nama": "Mahasiswa_256",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 2.99
+    },
+    "257": {
+      "nama": "Mahasiswa_257",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.79
+    },
+    "258": {
+      "nama": "Mahasiswa_258",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.58
+    },
+    "259": {
+      "nama": "Mahasiswa_259",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.74
+    },
+    "260": {
+      "nama": "Mahasiswa_260",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.87
+    },
+    "261": {
+      "nama": "Mahasiswa_261",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.63
+    },
+    "262": {
+      "nama": "Mahasiswa_262",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 2.76
+    },
+    "263": {
+      "nama": "Mahasiswa_263",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 2.96
+    },
+    "264": {
+      "nama": "Mahasiswa_264",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.46
+    },
+    "265": {
+      "nama": "Mahasiswa_265",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.52
+    },
+    "266": {
+      "nama": "Mahasiswa_266",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.62
+    },
+    "267": {
+      "nama": "Mahasiswa_267",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.95
+    },
+    "268": {
+      "nama": "Mahasiswa_268",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.86
+    },
+    "269": {
+      "nama": "Mahasiswa_269",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 2.73
+    },
+    "270": {
+      "nama": "Mahasiswa_270",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.47
+    },
+    "271": {
+      "nama": "Mahasiswa_271",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 2.93
+    },
+    "272": {
+      "nama": "Mahasiswa_272",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 2.94
+    },
+    "273": {
+      "nama": "Mahasiswa_273",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.09
+    },
+    "274": {
+      "nama": "Mahasiswa_274",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.39
+    },
+    "275": {
+      "nama": "Mahasiswa_275",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.25
+    },
+    "276": {
+      "nama": "Mahasiswa_276",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.86
+    },
+    "277": {
+      "nama": "Mahasiswa_277",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.56
+    },
+    "278": {
+      "nama": "Mahasiswa_278",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.94
+    },
+    "279": {
+      "nama": "Mahasiswa_279",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 3.39
+    },
+    "280": {
+      "nama": "Mahasiswa_280",
+      "divisi": "Divisi Humas",
+      "jabatan": "Staff",
+      "ipk": 2.6
+    },
+    "281": {
+      "nama": "Mahasiswa_281",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Ketua Divisi",
+      "ipk": 3.07
+    },
+    "282": {
+      "nama": "Mahasiswa_282",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 3.32
+    },
+    "283": {
+      "nama": "Mahasiswa_283",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 3.69
+    },
+    "284": {
+      "nama": "Mahasiswa_284",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 3.28
+    },
+    "285": {
+      "nama": "Mahasiswa_285",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 2.67
+    },
+    "286": {
+      "nama": "Mahasiswa_286",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 3.65
+    },
+    "287": {
+      "nama": "Mahasiswa_287",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 3.68
+    },
+    "288": {
+      "nama": "Mahasiswa_288",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 3.99
+    },
+    "289": {
+      "nama": "Mahasiswa_289",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 3.85
+    },
+    "290": {
+      "nama": "Mahasiswa_290",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 3.05
+    },
+    "291": {
+      "nama": "Mahasiswa_291",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 3.9
+    },
+    "292": {
+      "nama": "Mahasiswa_292",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 3.86
+    },
+    "293": {
+      "nama": "Mahasiswa_293",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 3.02
+    },
+    "294": {
+      "nama": "Mahasiswa_294",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 2.78
+    },
+    "295": {
+      "nama": "Mahasiswa_295",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 2.7
+    },
+    "296": {
+      "nama": "Mahasiswa_296",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 3.61
+    },
+    "297": {
+      "nama": "Mahasiswa_297",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 2.73
+    },
+    "298": {
+      "nama": "Mahasiswa_298",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 3.3
+    },
+    "299": {
+      "nama": "Mahasiswa_299",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 3.02
+    },
+    "300": {
+      "nama": "Mahasiswa_300",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 3.72
+    },
+    "301": {
+      "nama": "Mahasiswa_301",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 2.58
+    },
+    "302": {
+      "nama": "Mahasiswa_302",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 2.91
+    },
+    "303": {
+      "nama": "Mahasiswa_303",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 3.56
+    },
+    "304": {
+      "nama": "Mahasiswa_304",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 2.53
+    },
+    "305": {
+      "nama": "Mahasiswa_305",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 3.93
+    },
+    "306": {
+      "nama": "Mahasiswa_306",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 3.76
+    },
+    "307": {
+      "nama": "Mahasiswa_307",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 3.38
+    },
+    "308": {
+      "nama": "Mahasiswa_308",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 3.11
+    },
+    "309": {
+      "nama": "Mahasiswa_309",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 3.47
+    },
+    "310": {
+      "nama": "Mahasiswa_310",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 3.53
+    },
+    "311": {
+      "nama": "Mahasiswa_311",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 3.38
+    },
+    "312": {
+      "nama": "Mahasiswa_312",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 3.38
+    },
+    "313": {
+      "nama": "Mahasiswa_313",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 3.27
+    },
+    "314": {
+      "nama": "Mahasiswa_314",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 3.15
+    },
+    "315": {
+      "nama": "Mahasiswa_315",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 3.02
+    },
+    "316": {
+      "nama": "Mahasiswa_316",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 3.1
+    },
+    "317": {
+      "nama": "Mahasiswa_317",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 3.94
+    },
+    "318": {
+      "nama": "Mahasiswa_318",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 2.7
+    },
+    "319": {
+      "nama": "Mahasiswa_319",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 2.73
+    },
+    "320": {
+      "nama": "Mahasiswa_320",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 2.65
+    },
+    "321": {
+      "nama": "Mahasiswa_321",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 3.61
+    },
+    "322": {
+      "nama": "Mahasiswa_322",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 3.25
+    },
+    "323": {
+      "nama": "Mahasiswa_323",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 3.58
+    },
+    "324": {
+      "nama": "Mahasiswa_324",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 2.99
+    },
+    "325": {
+      "nama": "Mahasiswa_325",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 2.63
+    },
+    "326": {
+      "nama": "Mahasiswa_326",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 3.67
+    },
+    "327": {
+      "nama": "Mahasiswa_327",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 2.89
+    },
+    "328": {
+      "nama": "Mahasiswa_328",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 2.7
+    },
+    "329": {
+      "nama": "Mahasiswa_329",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 2.85
+    },
+    "330": {
+      "nama": "Mahasiswa_330",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 3.45
+    },
+    "331": {
+      "nama": "Mahasiswa_331",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 3.68
+    },
+    "332": {
+      "nama": "Mahasiswa_332",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 3.18
+    },
+    "333": {
+      "nama": "Mahasiswa_333",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 2.81
+    },
+    "334": {
+      "nama": "Mahasiswa_334",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 3.98
+    },
+    "335": {
+      "nama": "Mahasiswa_335",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 2.81
+    },
+    "336": {
+      "nama": "Mahasiswa_336",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 3.58
+    },
+    "337": {
+      "nama": "Mahasiswa_337",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 2.86
+    },
+    "338": {
+      "nama": "Mahasiswa_338",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 3.36
+    },
+    "339": {
+      "nama": "Mahasiswa_339",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 2.54
+    },
+    "340": {
+      "nama": "Mahasiswa_340",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 3.22
+    },
+    "341": {
+      "nama": "Mahasiswa_341",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 3.49
+    },
+    "342": {
+      "nama": "Mahasiswa_342",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 3.13
+    },
+    "343": {
+      "nama": "Mahasiswa_343",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 3.54
+    },
+    "344": {
+      "nama": "Mahasiswa_344",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 2.72
+    },
+    "345": {
+      "nama": "Mahasiswa_345",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 3.3
+    },
+    "346": {
+      "nama": "Mahasiswa_346",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 3.42
+    },
+    "347": {
+      "nama": "Mahasiswa_347",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 3.98
+    },
+    "348": {
+      "nama": "Mahasiswa_348",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 3.34
+    },
+    "349": {
+      "nama": "Mahasiswa_349",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 2.88
+    },
+    "350": {
+      "nama": "Mahasiswa_350",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 3.95
+    },
+    "351": {
+      "nama": "Mahasiswa_351",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 2.95
+    },
+    "352": {
+      "nama": "Mahasiswa_352",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 2.66
+    },
+    "353": {
+      "nama": "Mahasiswa_353",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 2.87
+    },
+    "354": {
+      "nama": "Mahasiswa_354",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 3.03
+    },
+    "355": {
+      "nama": "Mahasiswa_355",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 2.5
+    },
+    "356": {
+      "nama": "Mahasiswa_356",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 3.35
+    },
+    "357": {
+      "nama": "Mahasiswa_357",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 3.84
+    },
+    "358": {
+      "nama": "Mahasiswa_358",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 3.88
+    },
+    "359": {
+      "nama": "Mahasiswa_359",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 2.85
+    },
+    "360": {
+      "nama": "Mahasiswa_360",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 2.91
+    },
+    "361": {
+      "nama": "Mahasiswa_361",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 3.36
+    },
+    "362": {
+      "nama": "Mahasiswa_362",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 2.59
+    },
+    "363": {
+      "nama": "Mahasiswa_363",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 3.1
+    },
+    "364": {
+      "nama": "Mahasiswa_364",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 3.78
+    },
+    "365": {
+      "nama": "Mahasiswa_365",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 3.36
+    },
+    "366": {
+      "nama": "Mahasiswa_366",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 3.68
+    },
+    "367": {
+      "nama": "Mahasiswa_367",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 2.63
+    },
+    "368": {
+      "nama": "Mahasiswa_368",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 3.75
+    },
+    "369": {
+      "nama": "Mahasiswa_369",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 2.7
+    },
+    "370": {
+      "nama": "Mahasiswa_370",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 2.58
+    },
+    "371": {
+      "nama": "Mahasiswa_371",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 3.74
+    },
+    "372": {
+      "nama": "Mahasiswa_372",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 2.65
+    },
+    "373": {
+      "nama": "Mahasiswa_373",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 3.0
+    },
+    "374": {
+      "nama": "Mahasiswa_374",
+      "divisi": "Divisi Logistik",
+      "jabatan": "Staff",
+      "ipk": 3.74
+    }
+  }
+}
