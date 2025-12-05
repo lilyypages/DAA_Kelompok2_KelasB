@@ -61,7 +61,7 @@ def generate_bem_graph(n_total, seed):
     return adj_list, node_data
 
 def main():
-    n = 375 # Ukuran graf yang diinginkan
+    n = 375 
     my_seed = 121437  # Seed unik kamu
     
     
