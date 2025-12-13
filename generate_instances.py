@@ -45,7 +45,7 @@ def generate_bem_graph(n_total, seed):
             "ipk": round(random.uniform(2.5, 4.0), 2)
         }
     adj_list = nx.to_dict_of_lists(G_total)
-    file = open(f"data/Biodata N{n_total} seed({seed}).csv","w")
+    file = open(f"data/Biodata_N{n_total}_seed({seed}).csv","w")
     file.write("id;nama;divisi;jabatan;ipk\n")
     for i in range(n_total) :
         file.write(f"{i};{node_data[i]['nama']};{node_data[i]['divisi']};{node_data[i]['jabatan']};{node_data[i]['ipk']}\n")

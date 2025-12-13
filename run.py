@@ -21,15 +21,15 @@ def dfs_trans(adj_list,start,hasil,akar) :
     return hasil                               
 
 def bfs_trans(adj_list,start,hasil,useless) :
-    hasil[start] = []                           # 1
-    qiu = [start]                               # 1
-    while qiu :                                 # n
-        cabang = qiu.pop(0)                     # n   t n(n)
-        for i in adj_list[cabang] :             # n_e   t e
-            if i not in hasil :                 # 1
-                hasil[i] = [cabang]             # 1     t n-1
-                qiu.append(i)                   # 1     t n-1
-    return hasil                                # 1
+    hasil[start] = []
+    qiu = [start]
+    while qiu :                                 
+        cabang = qiu.pop(0)                     
+        for i in adj_list[cabang] :         
+            if i not in hasil :           
+                hasil[i] = [cabang]        
+                qiu.append(i)               
+    return hasil                          
 
 def run_once(algorithm, adj_list,start,hasil,akar):
     t0=time.perf_counter(); out=algorithm(adj_list,start,hasil,akar); dt=(time.perf_counter()-t0)*1000.0
@@ -167,7 +167,7 @@ def main() :
                             "graph_adj": adj_list,
                             "node_data": node_data
                         }       
-                filename = f"data/social_graph_N{n} seed({base_seed + r%n_seed}).json"
+                filename = f"data/social_graph_N{n}_seed({base_seed + r%n_seed}).json"
 
                 if newrun and r < n_seed :
                     with open(filename, "w") as f:
