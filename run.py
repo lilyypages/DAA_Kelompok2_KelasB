@@ -73,7 +73,6 @@ def main() :
     repeats=5
     start = 5
     n_seed = 1
-    newrun = True
 
     while True :
         while True :
@@ -137,12 +136,11 @@ def main() :
                     print("--------------------------------------------------")
                     try :
                         temp = int(input("Masukan Jumlah Seed Yang Baru : "))
-                        if temp > 5 or temp > repeats :
-                            print("Jumlah Seed Tidak Boleh Lebih Dari 5 Atau Lebih besar dari Pengulangan")
+                        if temp > 5 or temp > repeats or temp < 1 :
+                            print("Jumlah Seed Tidak Boleh Lebih Dari 5 Atau Lebih besar dari Pengulangan Atau Lebih Kecil dari 1")
                             input("Tekan Enter Untuk Lanjut...")
                             continue
-                        repeats = temp
-                        newrun = True
+                        n_seed = temp
                     except ValueError :
                         print('Input Tidak Boleh Selain Angka')
                         input("Tekan Enter Untuk Lanjut...")
@@ -157,27 +155,11 @@ def main() :
 
         for n in Ns:
             for r in range(repeats):
-                if newrun :
-                    if r < n_seed :
-                        adj_list, node_data = gi.generate_bem_graph(n, base_seed + r)
-                        output_content = {
-                            "project": "connected_components_social_graph",
-                            "description": f"Graf BEM {n} nodes dengan Data Atribut",
-                            "n_nodes": n,
-                            "graph_adj": adj_list,
-                            "node_data": node_data
-                        }       
                 filename = f"data/social_graph_N{n}_seed({base_seed + r%n_seed}).json"
-
-                if newrun and r < n_seed :
-                    with open(filename, "w") as f:
-                        json.dump(output_content, f, indent=2)
-                    
-                else :
-                    with open(filename, "r") as f:
-                        data = json.load(f)
-                    adj_list = {int(k): v for k, v in data["graph_adj"].items()}
-                    node_data = {int(k): v for k, v in data["node_data"].items()}
+                with open(filename, "r") as f:
+                    data = json.load(f)
+                adj_list = {int(k): v for k, v in data["graph_adj"].items()}
+                node_data = {int(k): v for k, v in data["node_data"].items()}
 
                 gc.collect
                 dA, hasilA = run_once(dfs_trans, adj_list,start,{},start)

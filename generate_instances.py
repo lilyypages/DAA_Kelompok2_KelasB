@@ -1,6 +1,7 @@
 import networkx as nx
 import random
 import os
+import json
 
 # Buat folder data jika belum ada
 os.makedirs("data", exist_ok=True)
@@ -51,3 +52,21 @@ def generate_bem_graph(n_total, seed):
         file.write(f"{i};{node_data[i]['nama']};{node_data[i]['divisi']};{node_data[i]['jabatan']};{node_data[i]['ipk']}\n")
     
     return adj_list, node_data
+
+Ns=[100,400,700,1000]
+base_seed = 121437
+
+for n in Ns:
+    for r in range(5):
+        adj_list, node_data = generate_bem_graph(n, base_seed + r)
+        output_content = {
+            "project": "connected_components_social_graph",
+            "description": f"Graf BEM {n} nodes dengan Data Atribut",
+            "n_nodes": n,
+            "graph_adj": adj_list,
+            "node_data": node_data
+        }       
+        filename = f"data/social_graph_N{n}_seed({base_seed + r}).json"
+        with open(filename, "w") as f:
+            json.dump(output_content, f, indent=2)
+print("Data Sudah Siap, Silahkan Jalankan Run.py")
