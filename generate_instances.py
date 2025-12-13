@@ -113,7 +113,5 @@ if __name__ == "__main__":
             
             with open(filename, "w") as f:
                 json.dump(output_content, f, indent=2)
-                
-            print(f"[OK] Generated: {filename}")
             
-    print(">> Selesai, data sudah siap! Silahkan jalankan run.py")
+    print("Data sudah siap! Silahkan jalankan run.py")
