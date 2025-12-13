@@ -167,7 +167,7 @@ def main() :
                             "graph_adj": adj_list,
                             "node_data": node_data
                         }       
-                filename = f"data/social_graph_N{n}_seed({base_seed + r%n_seed}).json"
+                filename = f"data/social_graph_N{n}_seed{base_seed + r%n_seed}.json"
 
                 if newrun and r < n_seed :
                     with open(filename, "w") as f:
