@@ -24,22 +24,6 @@ def generate_bem_graph(n_total, seed):
         ketua.pop(0)
         for j in ketua :
             G_total.add_edge(i,j)  
-    
-    n_a = int(n_total * 0.4)
-    n_b = int(n_total * 0.35)
-    n_c = n_total - n_a - n_b
-    
-    # Generate Graf Struktur
-    G_A = nx.barabasi_albert_graph(n=n_a, m=10, seed=seed)
-    G_B = nx.barabasi_albert_graph(n=n_b, m=10, seed=seed+1)
-    G_C = nx.barabasi_albert_graph(n=n_c, m=10, seed=seed+2)
-    G_total = nx.disjoint_union_all([G_A, G_B, G_C])
-    
-    # Tambah Edge Antar Divisi
-    G_total.add_edge(0, n_a)             
-    G_total.add_edge(n_a, n_a + n_b)
-    G_total.add_edge(0, n_a + n_b)
-    
     node_data = {}
     
     # Load Nama
