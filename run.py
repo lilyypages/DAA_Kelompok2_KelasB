@@ -226,7 +226,7 @@ def main() :
                 
                 print("========== MENU HASIL ==========")
                 print("A. Lihat Tabel Raw Data")
-                print("B. Lihat Summary (Rata-rata)")
+                print("B. Lihat Summary")
                 print("C. Visualisasi (Graph/Tree)")
                 print("D. Plot Grafik Perbandingan")
                 print("E. Kembali ke Menu Utama")
@@ -252,28 +252,75 @@ def main() :
                 
                 elif sub == "c":
                     os.system('cls' if os.name == 'nt' else 'clear')
-                    print("--- VISUALISASI ---")
-                    print("Kunci Tersedia:", list(tree_dfs.keys()))
-                    k = input(">> Masukkan Key (contoh N100_S121437): ")
+                    print("============ VISUALISASI ============")
+                    print("A. Graph Sosial (Struktur Awal)")
+                    print("B. Footprint DFS (Jalur Penelusuran)")
+                    print("C. Footprint BFS (Jalur Penelusuran)")
+                    print("D. Kembali ke Menu Utama")
+                    print("=====================================")
                     
-                    if k in tree_dfs:
-                        print("1. DFS Tree")
-                        print("2. BFS Tree")
-                        p = input("Pilih (1/2): ")
+                    vis_choice = input(">> ").lower()
+                    
+                    if vis_choice == "d":
+                        break # Keluar dari loop visualisasi, balik ke Menu Hasil
+                    
+                    # Cek pilihan valid A/B/C
+                    if vis_choice not in ["a", "b", "c"]:
+                        print("❌ Pilihan tidak valid.")
+                        time.sleep(1.0)
+                        continue
                         
-                        algo_name = "DFS" if p == "1" else "BFS"
-                        tree_data = tree_dfs[k] if p == "1" else tree_bfs[k]
+                    print("\n--- Pilihan Data ---")
+                    print("Kunci Tersedia:", list(tree_dfs.keys()))
+                    k = input("Masukkan Key (contoh N100_S121437): ")
+                    
+                    if k not in tree_dfs:
+                        print("❌ Key salah atau data tidak ada.")
+                        input("Tekan 'Enter' untuk kembali...")
+                        continue
+                    
+                    # Siapkan Data
+                    # Parsing Key untuk ambil N dan Seed
+                    parts = k.split("_") # ['N100', 'S121437']
+                    n_val = parts[0]
+                    s_val = parts[1]
+                    
+                    # PILIHAN A: GRAPH SOSIAL
+                    if vis_choice == "a":
+                        adj_list = graph_cache[k]
+                        ndata = node_data_cache[k]
                         
-                        # Parsing Key untuk ambil N dan Seed
-                        parts = k.split("_") # ['N100', 'S121437']
-                        n_val = parts[0]
-                        s_val = parts[1]
+                        print(f"Sedang menggambar Graph Sosial {k}...")
+                        
+                        # Buat Graph dari Adjacency List
+                        G = nx.from_dict_of_lists(adj_list)
+                        
+                        # Ubah ID Angka jadi Nama Orang
+                        mapping = {node_id: info['nama'] for node_id, info in ndata.items()}
+                        G = nx.relabel_nodes(G, mapping)
+                        
+                        plt.figure(figsize=(15, 15))
+                        # Layout Spring
+                        pos = nx.spring_layout(G, k=0.3, iterations=50, seed=42) 
+                        
+                        nx.draw(G, pos, 
+                                with_labels=True, 
+                                node_size=300, 
+                                node_color='lightgreen', 
+                                edge_color='gray',
+                                font_size=8,
+                                font_weight='bold')
+                            
+                        plt.title(f"Social Graph Structure - {n_val} {s_val}", fontsize=20)
+                        plt.show()
+                    
+                    # PILIHAN B/C: FOOTPRINT TREE
+                    elif vis_choice in ["b", "c"]:
+                        algo_name = "DFS" if vis_choice == "b" else "BFS"
+                        tree_data = tree_dfs[k] if vis_choice == "b" else tree_bfs[k]
                         
                         # Panggil Fungsi v_graph
                         v_graph(tree_data, n_val, s_val, algo_name, node_data_cache[k])
-                    else:
-                        print("❌ Key salah atau data tidak ada.")
-                        input("Tekan 'Enter' untuk melanjutkan...")
 
                 elif sub == "d":
                     os.system('cls' if os.name == 'nt' else 'clear')
