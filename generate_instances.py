@@ -48,8 +48,6 @@ def generate_bem_graph(n_total, seed):
         with open("data/nama.csv", "r") as file:
             nama = [line.strip() for line in file.readlines()]
     
-    nnama = len(nama) - 1
-    
     random.seed(121437)
     random.shuffle(nama)
     
@@ -69,8 +67,6 @@ def generate_bem_graph(n_total, seed):
         else:
             divisi = "Bidang Kemahasiswaan"
             jabatan = "Ketua Divisi" if node_id == n_a+n_b+n_c+n_d else "Staff"
-        nama1 = nama.pop(random.randint(0,nnama)).strip()
-        nnama -= 1
         
         # Ambil nama
         if len(nama) > 0:
