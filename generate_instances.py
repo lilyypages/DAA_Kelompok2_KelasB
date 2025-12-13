@@ -2,28 +2,41 @@ import networkx as nx
 import random
 import os
 import json
+import itertools
 
 # Buat folder data jika belum ada
 os.makedirs("data", exist_ok=True)
 
 def generate_bem_graph(n_total, seed):
     random.seed(seed)
+    
     n_a = int(n_total * 0.2)
     n_b = int(n_total * 0.15)
     n_c = int(n_total * 0.25)
     n_d = int(n_total * 0.15)
-    n_e = int(n_total * 0.25)
+    n_e = n_total - (n_a + n_b + n_c + n_d)
+    
+    # Generate Sub-Graf
     G_A = nx.barabasi_albert_graph(n=n_a, m=10, seed=seed)
     G_B = nx.barabasi_albert_graph(n=n_b, m=10, seed=seed+1)
     G_C = nx.barabasi_albert_graph(n=n_c, m=10, seed=seed+2)
     G_D = nx.barabasi_albert_graph(n=n_d, m=10, seed=seed+3)
     G_E = nx.barabasi_albert_graph(n=n_e, m=10, seed=seed+4)
+    
     G_total = nx.disjoint_union_all([G_A, G_B, G_C, G_D, G_E])
-    ketua = [0,n_a,n_a+n_b,n_a+n_b+n_c,n_a+n_b+n_c+n_d]
-    for i in [0,n_a,n_a+n_b,n_a+n_b+n_c,n_a+n_b+n_c+n_d] :
-        ketua.pop(0)
-        for j in ketua :
-            G_total.add_edge(i,j)  
+    
+    # Koneksi Antar Ketua
+    ketua_a = 0
+    ketua_b = n_a
+    ketua_c = n_a + n_b
+    ketua_d = n_a + n_b + n_c
+    ketua_e = n_a + n_b + n_c + n_d
+    
+    list_ketua = [ketua_a, ketua_b, ketua_c, ketua_d, ketua_e]
+    
+    for k1, k2 in itertools.combinations(list_ketua, 2):
+        G_total.add_edge(k1, k2)
+    
     node_data = {}
     
     # Load Nama
@@ -97,5 +110,7 @@ if __name__ == "__main__":
             
             with open(filename, "w") as f:
                 json.dump(output_content, f, indent=2)
+                
+            print(f"[OK] Generated: {filename}")
             
-    print("Data sudah siap! Silahkan jalankan run.py")
+    print(">> Selesai, data sudah siap! Silahkan jalankan run.py")
