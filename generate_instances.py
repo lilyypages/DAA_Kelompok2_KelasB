@@ -53,6 +53,10 @@ def generate_bem_graph(n_total, seed):
     
     return adj_list, node_data
 
+if not(os.path.exists("data/nama.csv")):
+    print("Silahkan Buat nama.csv berisi minimal 1000 baris nama pada folder data terlebih dahulu")
+    exit(0)
+
 Ns=[100,400,700,1000]
 base_seed = 121437
 
@@ -69,4 +73,4 @@ for n in Ns:
         filename = f"data/social_graph_N{n}_seed({base_seed + r}).json"
         with open(filename, "w") as f:
             json.dump(output_content, f, indent=2)
-print("Data Sudah Siap, Silahkan Jalankan Run.py")
+print("Data Sudah Siap, Silahkan Jalankan run.py")

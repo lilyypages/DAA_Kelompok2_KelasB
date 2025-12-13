@@ -490,4 +490,7 @@ def main() :
                     input("Tekan Enter Untuk Lanjut...")
 
 if __name__ == "__main__":
+    if not(os.path.exists("data/Biodata_N100_seed(121437).csv")):
+        print("Silahkan Run generate_instance.py terlebih dahulu")
+        exit(0)
     main()
