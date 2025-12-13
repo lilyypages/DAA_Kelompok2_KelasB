@@ -1,0 +1,20 @@
+# --- Python Internals (Sampah Cache) ---
+__pycache__/
+*.pyc
+
+# --- Jupyter Notebook Checkpoints (Sampah Notebook) ---
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# --- IDE Settings (Settingan VS Code di laptopmu) ---
+.vscode/
+.idea/
+
+# --- Virtual Environment (Kalau nanti pakai venv) ---
+env/
+venv/
+.env
+
+# --- System Files (Sampah Mac/Windows) ---
+.DS_Store
+Thumbs.db
