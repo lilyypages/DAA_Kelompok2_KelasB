@@ -160,6 +160,27 @@ def main() :
                     data = json.load(f)
                 adj_list = {int(k): v for k, v in data["graph_adj"].items()}
                 node_data = {int(k): v for k, v in data["node_data"].items()}
+                if newrun :
+                    if r < n_seed :
+                        adj_list, node_data = gi.generate_bem_graph(n, base_seed + r)
+                        output_content = {
+                            "project": "connected_components_social_graph",
+                            "description": f"Graf BEM {n} nodes dengan Data Atribut",
+                            "n_nodes": n,
+                            "graph_adj": adj_list,
+                            "node_data": node_data
+                        }       
+                filename = f"data/social_graph_N{n}_seed{base_seed + r%n_seed}.json"
+
+                if newrun and r < n_seed :
+                    with open(filename, "w") as f:
+                        json.dump(output_content, f, indent=2)
+                    
+                else :
+                    with open(filename, "r") as f:
+                        data = json.load(f)
+                    adj_list = {int(k): v for k, v in data["graph_adj"].items()}
+                    node_data = {int(k): v for k, v in data["node_data"].items()}
 
                 gc.collect
                 dA, hasilA = run_once(dfs_trans, adj_list,start,{},start)

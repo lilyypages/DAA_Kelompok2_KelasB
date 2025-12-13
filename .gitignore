@@ -6,7 +6,7 @@ __pycache__/
 .ipynb_checkpoints/
 */.ipynb_checkpoints/
 
-# --- IDE Settings (Settingan VS Code di laptopmu) ---
+# --- IDE Settings (Settingan VS Code di laptop) ---
 .vscode/
 .idea/
 
