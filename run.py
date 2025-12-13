@@ -102,7 +102,7 @@ def main() :
                     print("Daftar Nama Mahasiswa :")
                     nama = []
                     try : 
-                        file = open("data/Biodata_N100_seed(121437).csv","r")
+                        file = open("data/Biodata_N100.csv","r")
                         for i in range(101) :
                             a,b,c,d,e = file.readline().split(";")
                             if i == 0 :
