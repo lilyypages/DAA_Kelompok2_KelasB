@@ -82,7 +82,7 @@ def main() :
             print("A. Atur Jumlah Pengulangan Simulasi")
             print("B. Atur Mahasiswa Asal")
             print("C. Atur Jumlah Seed")
-            print("D. Eksekusi  Eksperimen")
+            print("D. Eksekusi Eksperimen")
             print("E. Keluar Program")
             jawab = input(">> ").lower()
             os.system("cls")
@@ -216,7 +216,7 @@ def main() :
             print("C. Lihat Graph dan Footprint Transversal")
             print("D. Lihat Plot Tabel dan Uji Statistik")
             print("E. Keluar Program")
-            print("F. Ulang Simulasi")
+            print("F. Ulang Eksperimen")
             jawab = input(">> ").lower()
             os.system("cls")
             match(jawab) :
@@ -280,9 +280,9 @@ def main() :
                                 G = nx.Graph(graph_nama)
                                 # pos = nx.nx_pydot.graphviz_layout(G, prog="dot")
                                 pos = nx.spring_layout(G, k=2.5, iterations=200)
-                                plt.figure(figsize=(20, 20))
-                                nx.draw(G, pos, with_labels=True, node_size=600, font_size=15, font_color = "black", font_weight='bold',edge_color="red")
-                                plt.title(f"Graph N({jumlah}) Seed({seeds})",fontsize=30, fontweight='bold')
+                                plt.figure(figsize=(15, 15))
+                                nx.draw(G, pos, with_labels=True, node_size=300, font_size=7.5, font_color = "black", font_weight='bold',edge_color="red")
+                                plt.title(f"Graph N({jumlah}) Seed({seeds})",fontsize=15, fontweight='bold')
                                 plt.show()
 
                             case "b" :
@@ -322,22 +322,22 @@ def main() :
                                     for parent in parents:
                                         tree_reverse.add_edge(node_data[parent]["nama"], node_data[child]["nama"])
 
-                                plt.figure(figsize=(20, 20))
+                                plt.figure(figsize=(15, 15))
                                 pos = nx.nx_pydot.graphviz_layout(tree_reverse, prog="dot")
-                                nx.draw(tree_reverse, pos, with_labels=False, node_size=800, arrows=True,edge_color="red")
+                                nx.draw(tree_reverse, pos, with_labels=False, node_size=400, arrows=True,edge_color="red")
                                 for node, (x, y) in pos.items():
                                     plt.text(
                                         x,
                                         y,
                                         node,
-                                        fontsize=14,
+                                        fontsize=7,
                                         fontweight='bold',
                                         rotation=-45,
                                         ha='center',
                                         va='center',
                                         color='black'
                                     )
-                                plt.title(f"Footprint DFS N({jumlah}) Seed({seeds})",fontsize=30, fontweight='bold')
+                                plt.title(f"Footprint DFS N({jumlah}) Seed({seeds})",fontsize=15, fontweight='bold')
                                 plt.show()
 
                             case "c" :
@@ -377,22 +377,22 @@ def main() :
                                     for parent in parents:
                                         tree_reverse.add_edge(node_data[parent]["nama"], node_data[child]["nama"])
 
-                                plt.figure(figsize=(20, 20))
+                                plt.figure(figsize=(15, 15))
                                 pos = nx.nx_pydot.graphviz_layout(tree_reverse, prog="dot")
-                                nx.draw(tree_reverse, pos, with_labels=False, node_size=800, arrows=True,edge_color="red")
+                                nx.draw(tree_reverse, pos, with_labels=False, node_size=400, arrows=True,edge_color="red")
                                 for node, (x, y) in pos.items():
                                     plt.text(
                                         x,
                                         y,
                                         node,
-                                        fontsize=14,
+                                        fontsize=7,
                                         fontweight='bold',
                                         rotation=-45,
                                         ha='center',
                                         va='center',
                                         color='black'
                                     )
-                                plt.title(f"Footprint BFS N({jumlah}) Seed({seeds})",fontsize=30, fontweight='bold')
+                                plt.title(f"Footprint BFS N({jumlah}) Seed({seeds})",fontsize=15, fontweight='bold')
                                 plt.show()
                             
                             case "d" :
@@ -466,6 +466,7 @@ def main() :
                                         b=df[(df['n']==n)&(df['algo']=='BFS')]['time_ms'].values
                                         t,p=ttest_rel(a,b)
                                         print(f'n={n}: t={t:.3f}, p={p*100:.2f}%')
+                                    input("Tekan Enter Untuk Lanjut...")
 
                                 except Exception as e:
                                     print('SciPy tidak tersedia; lewati uji t berpasangan.', e)
