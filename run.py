@@ -201,7 +201,12 @@ def main() :
         summary=df.groupby(['algo','n']).agg(time_ms_mean=('time_ms','mean'),time_ms_median=('time_ms','median'), time_ms_sd=('time_ms','std')).reset_index() #, gap_mean=('gap','mean')).reset_index()
         summary.to_csv('results/summary.csv', index=False)
         newrun = False
-        print(summary)
+        latex_table=summary.rename(columns={'time_ms_mean':'Mean (ms)','time_ms_sd':'SD (ms)','time_ms_median':'Median (ms)'}).to_latex(index=False)#,'gap_mean':'Gap'}).to_latex(index=False)
+
+        with open('results/summary.tex','w',encoding='utf-8') as f:
+            f.write(latex_table)
+
+        print('Saved results/summary.tex')
 
         while True :
             os.system("cls")
@@ -209,7 +214,7 @@ def main() :
             print("A. Lihat Hasil Simulasi")
             print("B. Lihat Hasil Summary")
             print("C. Lihat Graph dan Footprint Transversal")
-            print("D. Lihat Plot dan Tabel")
+            print("D. Lihat Plot Tabel dan Uji Statistik")
             print("E. Keluar Program")
             print("F. Ulang Simulasi")
             jawab = input(">> ").lower()
@@ -397,14 +402,15 @@ def main() :
                                 print("Input Tidak Valid!!!")
                                 input("Tekan Enter Untuk Lanjut...")
                 case "d" :
-                    print("========== Plot dan Tabel ===========")
+                    print("========== Plot Tabel dan Uji Statistik ===========")
                     while True :
                         os.system("cls")
                         print("Mau Lihat Apa Bang?")
                         print("A. Plot N vs Mean Time by Algorithm")
                         print("B. Plot N vs Median Time by Algorithm")
                         print("C. Boxplot")
-                        print("D. Kembali")
+                        print("D. Uji T-Test")
+                        print("E. Kembali")
                         jawab2 = input(">> ").lower()
                         os.system("cls")
                         match(jawab2) :
@@ -452,6 +458,19 @@ def main() :
                                 plt.show()
 
                             case "d" :
+                                try:
+                                    from scipy.stats import ttest_rel
+                                    print("Hasil T-Test :")
+                                    for n in sorted(df['n'].unique()):
+                                        a=df[(df['n']==n)&(df['algo']=='DFS')]['time_ms'].values
+                                        b=df[(df['n']==n)&(df['algo']=='BFS')]['time_ms'].values
+                                        t,p=ttest_rel(a,b)
+                                        print(f'n={n}: t={t:.3f}, p={p*100:.2f}%')
+
+                                except Exception as e:
+                                    print('SciPy tidak tersedia; lewati uji t berpasangan.', e)
+
+                            case "e" :
                                 break
 
                             case _ :
