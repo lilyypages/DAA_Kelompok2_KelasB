@@ -102,7 +102,7 @@ def main() :
                     print("Daftar Nama Mahasiswa :")
                     nama = []
                     try : 
-                        file = open("data/Biodata_N100_seed(121437).csv","r")
+                        file = open("data/Biodata_N100.csv","r")
                         for i in range(101) :
                             a,b,c,d,e = file.readline().split(";")
                             if i == 0 :
@@ -490,7 +490,7 @@ def main() :
                     input("Tekan Enter Untuk Lanjut...")
 
 if __name__ == "__main__":
-    if not(os.path.exists("data/Biodata_N100_seed(121437).csv")):
+    if not(os.path.exists("data/Biodata_N100.csv")):
         print("Silahkan Run generate_instance.py terlebih dahulu")
         exit(0)
     main()
