@@ -8,16 +8,22 @@ os.makedirs("data", exist_ok=True)
 
 def generate_bem_graph(n_total, seed):
     random.seed(seed)
-    n_a = int(n_total * 0.4)
-    n_b = int(n_total * 0.35)
-    n_c = n_total - n_a - n_b
+    n_a = int(n_total * 0.2)
+    n_b = int(n_total * 0.15)
+    n_c = int(n_total * 0.25)
+    n_d = int(n_total * 0.15)
+    n_e = int(n_total * 0.25)
     G_A = nx.barabasi_albert_graph(n=n_a, m=10, seed=seed)
     G_B = nx.barabasi_albert_graph(n=n_b, m=10, seed=seed+1)
     G_C = nx.barabasi_albert_graph(n=n_c, m=10, seed=seed+2)
-    G_total = nx.disjoint_union_all([G_A, G_B, G_C])
-    G_total.add_edge(0, n_a)             
-    G_total.add_edge(n_a, n_a + n_b)
-    G_total.add_edge(0, n_a + n_b)     
+    G_D = nx.barabasi_albert_graph(n=n_d, m=10, seed=seed+3)
+    G_E = nx.barabasi_albert_graph(n=n_e, m=10, seed=seed+4)
+    G_total = nx.disjoint_union_all([G_A, G_B, G_C, G_D, G_E])
+    ketua = [0,n_a,n_a+n_b,n_a+n_b+n_c,n_a+n_b+n_c+n_d]
+    for i in [0,n_a,n_a+n_b,n_a+n_b+n_c,n_a+n_b+n_c+n_d] :
+        ketua.pop(0)
+        for j in ketua :
+            G_total.add_edge(i,j)  
     node_data = {}
     nama = []
     file = open("data/nama.csv","a+")
@@ -29,14 +35,20 @@ def generate_bem_graph(n_total, seed):
     random.seed(121437)
     for node_id in G_total.nodes():
         if node_id < n_a:
-            divisi = "Divisi Acara"
+            divisi = "Bidang Pergerakan"
             jabatan = "Ketua Divisi" if node_id == 0 else "Staff"
-        elif node_id < (n_a + n_b):
-            divisi = "Divisi Humas"
+        elif node_id < n_a+n_b :
+            divisi = "Bidang Analisis"
             jabatan = "Ketua Divisi" if node_id == n_a else "Staff"
+        elif node_id < n_a+n_b+n_c :
+            divisi = "Bidang Kemasyarakatan"
+            jabatan = "Ketua Divisi" if node_id == n_a+n_b else "Staff"
+        elif node_id < n_a+n_b+n_c+n_d :
+            divisi = "Bidang Relasi"
+            jabatan = "Ketua Divisi" if node_id == n_a+n_b+n_c else "Staff"
         else:
-            divisi = "Divisi Logistik"
-            jabatan = "Ketua Divisi" if node_id == (n_a + n_b) else "Staff"
+            divisi = "Bidang Kemahasiswaan"
+            jabatan = "Ketua Divisi" if node_id == n_a+n_b+n_c+n_d else "Staff"
         nama1 = nama.pop(random.randint(0,nnama)).strip()
         nnama -= 1
         node_data[node_id] = {
