@@ -104,6 +104,7 @@ def main() :
                     print("========== Atur Jumlah Pengulangan Simulasi ===========")
                     print(f"Jumlah Pengulangan Simulasi Saat Ini : {repeats}")
                     print("--------------------------------------------------")
+                    print("NB : Semakin Banyak Pengulangan, Maka Simulasi akan semakin lambat")
                     try :
                         temp = int(input("Masukan Jumlah Pengulangan Simulasi Yang Baru : "))
                         repeats = temp
@@ -490,8 +491,8 @@ def main() :
                     input("Tekan Enter Untuk Lanjut...")
 
 if __name__ == "__main__":
-    if not os.path.exists("data") or not os.listdir("data"):
-        print("Folder data kosong. Run generate_instances.py dulu!")
+    if not os.path.exists("data/social_graph_N100_seed(121437).json") :
+        print("File yang dibutuhkan Tidak ada. Run generate_instances.py dulu!")
     else:
         main()
         
