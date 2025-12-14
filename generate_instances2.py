@@ -106,7 +106,7 @@ if __name__ == "__main__":
                 "node_data": node_data
             }       
             
-            filename = f"data/social_graph_N{n}_seed({current_seed}).json"
+            filename = f"data/social_graph_N{n}_seed{current_seed}.json"
             
             with open(filename, "w") as f:
                 json.dump(output_content, f, indent=2)
