@@ -507,7 +507,7 @@ def main() :
                     input("Tekan Enter Untuk Lanjut...")
 
 if __name__ == "__main__":
-    if not os.path.exists("data/social_graph_N100_seed(121437).json") :
+    if not os.path.exists("data/social_graph_N100_seed(121437).json") or not os.path.exists("data/social_graph_N100o_seed(121441).json"):
         print("File yang dibutuhkan Tidak ada. Run generate_instances.py dulu!")
     else:
         main()
