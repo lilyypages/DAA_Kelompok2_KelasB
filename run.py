@@ -469,7 +469,7 @@ def main() :
                                         a=df[(df['n']==n)&(df['algo']=='DFS')]['time_ms'].values
                                         b=df[(df['n']==n)&(df['algo']=='BFS')]['time_ms'].values
                                         t,p=ttest_rel(a,b)
-                                        print(f'n={n}: t={t:.3f}, p={p*100:.2f}%')
+                                        print(f'n={n}: t={t:.3f}, p={p:.2f}')
                                     input("Tekan Enter Untuk Lanjut...")
 
                                 except Exception as e:
