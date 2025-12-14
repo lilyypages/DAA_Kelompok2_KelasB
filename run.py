@@ -413,8 +413,9 @@ def main() :
                         print("A. Plot N vs Mean Time by Algorithm")
                         print("B. Plot N vs Median Time by Algorithm")
                         print("C. Boxplot")
-                        print("D. Uji T-Test")
-                        print("E. Kembali")
+                        print("D. Histogram waktu eksekusi per algoritma")
+                        print("E. Uji T-Test")
+                        print("F. Kembali")
                         jawab2 = input(">> ").lower()
                         os.system("cls")
                         match(jawab2) :
@@ -462,6 +463,21 @@ def main() :
                                 plt.show()
 
                             case "d" :
+                                plt.figure()
+                                for algo in sorted(df['algo'].unique()):
+                                    data = df[df['algo'] == algo]['time_ms']
+                                    plt.hist(data, bins=20, alpha=0.5, label=f'Algo {algo}')
+
+                                plt.xlabel('time (ms)')
+                                plt.ylabel('frequency')
+                                plt.title('Histogram waktu eksekusi per algoritma')
+                                plt.legend()
+                                plt.grid(True)
+                                plt.tight_layout()
+                                plt.savefig('results/plot_hist_time_per_algo.png', dpi=150)
+                                plt.show()
+
+                            case "e" :
                                 try:
                                     from scipy.stats import ttest_rel
                                     print("Hasil T-Test :")
@@ -475,7 +491,7 @@ def main() :
                                 except Exception as e:
                                     print('SciPy tidak tersedia; lewati uji t berpasangan.', e)
 
-                            case "e" :
+                            case "f" :
                                 break
 
                             case _ :
