@@ -89,275 +89,6 @@ def main() :
     n_seed = 1
 
     while True :
-        # os.system('cls' if os.name == 'nt' else 'clear')
-        # print("============================================")
-        # print("       EXPERIMENT RUNNER (DFS vs BFS)       ")
-        # print("============================================")
-        # print(f"Config: Repeats={repeats} | Seeds={n_seed} | StartNode={start_node_id}")
-        # print("--------------------------------------------")
-        # print("A. Atur Jumlah Pengulangan Simulasi")
-        # print("B. Atur Mahasiswa Asal (Start Node)")
-        # print("C. Atur Jumlah Seed")
-        # print("D. Eksekusi Eksperimen")
-        # print("E. Keluar Program")
-        # print("============================================")
-        
-        # jawab = input(">> ").lower()
-        
-        # if jawab == "a":
-        #     os.system('cls' if os.name == 'nt' else 'clear') 
-        #     print("========== ATUR PENGULANGAN ==========")
-        #     print(f"Jumlah Repeats saat ini: {repeats}")
-        #     print("--------------------------------------")
-        #     try:
-        #         baru = int(input("Masukkan jumlah baru: "))
-        #         repeats = baru
-        #         print("\n✅ Berhasil diubah!")
-        #     except: 
-        #         print("\n❌ Input harus angka!")
-                
-        #     time.sleep(1.0)
-
-        # elif jawab == "b":
-        #     os.system('cls' if os.name == 'nt' else 'clear')
-        #     print("========== PILIH MAHASISWA ==========")
-            
-        #     csv_files = glob.glob("data/Biodata_*.csv")
-        #     if not csv_files:
-        #         print("\n❌ File Biodata tidak ada! \nRun generate_instances.py dulu!")
-        #     else:
-        #         df_nama = pd.read_csv(csv_files[0], sep=";")
-        #         print(df_nama[['id', 'nama']].head(50).to_string(index=False))
-        #         print("-------------------------------------")
-        #         try:
-        #             mhs = int(input("Masukan ID Mahasiswa (Start Node): "))
-        #             if mhs < 0: print("\n❌ Tidak boleh negatif!")
-        #             else: start_node_id = mhs
-        #         except: pass
-            
-        #     input("\nTekan Enter untuk kembali...")
-
-        # elif jawab == "c":
-        #     os.system('cls' if os.name == 'nt' else 'clear')
-        #     print("========== ATUR JUMLAH SEED ==========")
-        #     print(f"Jumlah Seed saat ini: {n_seed}")
-        #     print("--------------------------------------")
-        #     try:
-        #         temp = int(input(f"Masukkan Jumlah Seed (Max 5): "))
-        #         if 1 <= temp <= 5: 
-        #             n_seed = temp
-        #             print("\n✅ Sip, seed diatur.")
-        #         else:
-        #             print("\n❌ Harus antara 1-5.")
-        #     except ValueError:
-        #         print("\n❌ Error: Input harus berupa angka bulat!")
-            
-        #     time.sleep(1.5)
-
-        # elif jawab == "d":
-        #     print("\nMEMULAI EKSPERIMEN...")
-        #     rows = [] 
-            
-        #     for n in Ns:
-        #         # Safety check start node
-        #         curr_start = start_node_id if start_node_id < n else 0
-        #         if curr_start != start_node_id:
-        #             print(f"[Info] N={n}, Start Node {start_node_id} kegedean. Reset ke 0.")
-                    
-        #         for r in range(repeats):
-        #             # Logic Seed Unik + Variasi
-        #             current_seed = base_seed + (r % n_seed)
-        #             filename = f"data/social_graph_N{n}_seed{current_seed}.json"
-                    
-        #             if not os.path.exists(filename):
-        #                 print(f"Skip {filename} (File tidak ditemukan)")
-        #                 continue
-                        
-        #             # LOAD JSON
-        #             with open(filename, "r") as f:
-        #                 data = json.load(f)
-                    
-        #             # Convert keys string -> int
-        #             adj_list = {int(k): v for k, v in data["graph_adj"].items()}
-        #             node_data = {int(k): v for k, v in data["node_data"].items()}
-                    
-        #             # Simpan ke cache buat visualisasi nanti (Key Unik: N + Seed)
-        #             key = f"N{n}_S{current_seed}"
-        #             graph_cache[key] = adj_list
-        #             node_data_cache[key] = node_data
-
-        #             # RUN ALGO
-        #             dA, hasilA = run_once(dfs_trans, adj_list, curr_start, {}, curr_start)
-        #             dB, hasilB = run_once(bfs_trans, adj_list, curr_start, {}, curr_start)
-                    
-        #             rows.append({'n': n, 'repeat': r, 'algo': 'DFS', 'time_ms': dA})
-        #             rows.append({'n': n, 'repeat': r, 'algo': 'BFS', 'time_ms': dB})
-                    
-        #             # Simpan Tree buat visualisasi (simpan 1 sampel per seed unik)
-        #             if r < n_seed:
-        #                 tree_dfs[key] = hasilA
-        #                 tree_bfs[key] = hasilB
-                        
-        #             print(f"-> N={n} Seed={current_seed} | Rep={r+1} | DFS={dA:.2f}ms BFS={dB:.2f}ms")
-
-        #     # Simpan hasil ke CSV
-        #     df = pd.DataFrame(rows)
-        #     df.to_csv('results/experiment_raw.csv', index=False)
-            
-        #     # Simpan Summary
-        #     summary = df.groupby(['algo', 'n']).agg(
-        #         mean=('time_ms', 'mean'), 
-        #         median=('time_ms', 'median'), 
-        #         sd=('time_ms', 'std')
-        #     ).reset_index()
-        #     summary.to_csv('results/summary.csv', index=False)
-            
-        #     # Simpan ke Latex
-        #     with open('results/summary.tex', 'w') as f: f.write(summary.to_latex(index=False))
-
-        #     print("\n✅ Eksperimen Selesai! Data tersimpan di folder 'results/'.")
-        #     print("Masuk ke Menu Hasil...")
-        #     time.sleep(5)
-            
-        #     # SUB-MENU HASIL
-        #     while True:
-        #         os.system('cls' if os.name == 'nt' else 'clear')
-                
-        #         print("========== MENU HASIL ==========")
-        #         print("A. Lihat Tabel Raw Data")
-        #         print("B. Lihat Summary")
-        #         print("C. Visualisasi (Graph/Tree)")
-        #         print("D. Plot Grafik Perbandingan")
-        #         print("E. Kembali ke Menu Utama")
-        #         print("================================")
-                
-        #         sub = input(">> ").lower()
-                
-        #         if sub == "a": 
-        #             os.system('cls' if os.name == 'nt' else 'clear')
-        #             print("==============================")
-        #             print("---------- RAW DATA ----------")
-        #             print("==============================")
-        #             print(df)
-        #             input("\nTekan 'Enter' untuk kembali...")
-                    
-        #         elif sub == "b": 
-        #             os.system('cls' if os.name == 'nt' else 'clear')
-        #             print("=======================================")
-        #             print("------------- SUMMARY DATA ------------")
-        #             print("=======================================")
-        #             print(summary)
-        #             input("\nTekan 'Enter' untuk kembali...")
-                
-        #         elif sub == "c":
-        #             os.system('cls' if os.name == 'nt' else 'clear')
-        #             print("============ VISUALISASI ============")
-        #             print("A. Graph Sosial (Struktur Awal)")
-        #             print("B. Footprint DFS (Jalur Penelusuran)")
-        #             print("C. Footprint BFS (Jalur Penelusuran)")
-        #             print("D. Kembali ke Menu Utama")
-        #             print("=====================================")
-                    
-        #             vis_choice = input(">> ").lower()
-                    
-        #             if vis_choice == "d":
-        #                 break 
-                    
-        #             # Cek pilihan valid A/B/C
-        #             if vis_choice not in ["a", "b", "c"]:
-        #                 print("❌ Pilihan tidak valid.")
-        #                 time.sleep(1.0)
-        #                 continue
-                        
-        #             print("\n--- Pilihan Data ---")
-        #             print("Kunci Tersedia:", list(tree_dfs.keys()))
-        #             k = input("Masukkan Key (contoh N100_S121437): ")
-                    
-        #             if k not in tree_dfs:
-        #                 print("❌ Key salah atau data tidak ada.")
-        #                 input("Tekan 'Enter' untuk kembali...")
-        #                 continue
-                    
-        #             # Siapkan Data
-        #             # Parsing Key untuk ambil N dan Seed
-        #             parts = k.split("_") # ['N100', 'S121437']
-        #             n_val = parts[0]
-        #             s_val = parts[1]
-                    
-        #             # PILIHAN A: GRAPH SOSIAL
-        #             if vis_choice == "a":
-        #                 adj_list = graph_cache[k]
-        #                 ndata = node_data_cache[k]
-                        
-        #                 print(f"Sedang menggambar Graph Sosial {k}...")
-                        
-        #                 # Buat Graph dari Adjacency List
-        #                 G = nx.from_dict_of_lists(adj_list)
-                        
-        #                 # Ubah ID Angka jadi Nama Orang
-        #                 mapping = {node_id: info['nama'] for node_id, info in ndata.items()}
-        #                 G = nx.relabel_nodes(G, mapping)
-                        
-        #                 plt.figure(figsize=(15, 15))
-        #                 # Layout Spring
-        #                 pos = nx.spring_layout(G, k=0.3, iterations=50, seed=42) 
-                        
-        #                 nx.draw(G, pos, 
-        #                         with_labels=True, 
-        #                         node_size=300, 
-        #                         node_color='lightgreen', 
-        #                         edge_color='gray',
-        #                         font_size=8,
-        #                         font_weight='bold')
-                            
-        #                 plt.title(f"Social Graph Structure - {n_val} {s_val}", fontsize=20)
-        #                 plt.show()
-                    
-        #             # PILIHAN B/C: FOOTPRINT TREE
-        #             elif vis_choice in ["b", "c"]:
-        #                 algo_name = "DFS" if vis_choice == "b" else "BFS"
-        #                 tree_data = tree_dfs[k] if vis_choice == "b" else tree_bfs[k]
-                        
-        #                 # Panggil Fungsi v_graph
-        #                 v_graph(tree_data, n_val, s_val, algo_name, node_data_cache[k])
-
-        #         elif sub == "d":
-        #             os.system('cls' if os.name == 'nt' else 'clear')
-        #             print("Generating Plot...")
-        #             plt.figure(figsize=(10, 6))
-        #             for algo in ['DFS', 'BFS']:
-        #                 subset = summary[summary['algo'] == algo]
-        #                 plt.plot(subset['n'], subset['mean'], marker='o', label=algo, linewidth=2)
-                    
-        #             plt.legend()
-        #             plt.grid(True, linestyle='--', alpha=0.7)
-        #             plt.title("Perbandingan Waktu Eksekusi (DFS vs BFS)")
-        #             plt.xlabel("Jumlah Node (N)")
-        #             plt.ylabel("Rata-rata Waktu (ms)")
-        #             plt.show()
-                    
-        #         elif sub == "e": 
-        #             os.system('cls' if os.name == 'nt' else 'clear')
-        #             break
-                
-        #         else: 
-        #             print("❌ Input tidak valid!")
-        #             time.sleep(1.5)
-
-        # elif jawab == "e":
-        #     os.system('cls' if os.name == 'nt' else 'clear')
-        #     print("\n" + "="*44)
-        #     print("   TERIMA KASIH SUDAH MENGGUNAKAN APP INI")
-        #     print("   Project by: Kelompok 2 DAA Kelas B")
-        #     print("   Babaii! 👋")
-        #     print("="*44 + "\n")
-        #     time.sleep(1.5) 
-        #     break
-        
-        # else:
-        #     print("❌ Input tidak valid! Harap pilih A, B, C, D, atau E.")
-        #     time.sleep(1.5)
-    
         while True :
             os.system("cls")
             print("Mau Ngapain Bang?")
@@ -763,3 +494,273 @@ if __name__ == "__main__":
         print("Folder data kosong. Run generate_instances.py dulu!")
     else:
         main()
+        
+        
+                # os.system('cls' if os.name == 'nt' else 'clear')
+            # print("============================================")
+            # print("       EXPERIMENT RUNNER (DFS vs BFS)       ")
+            # print("============================================")
+            # print(f"Config: Repeats={repeats} | Seeds={n_seed} | StartNode={start_node_id}")
+            # print("--------------------------------------------")
+            # print("A. Atur Jumlah Pengulangan Simulasi")
+            # print("B. Atur Mahasiswa Asal (Start Node)")
+            # print("C. Atur Jumlah Seed")
+            # print("D. Eksekusi Eksperimen")
+            # print("E. Keluar Program")
+            # print("============================================")
+            
+            # jawab = input(">> ").lower()
+            
+            # if jawab == "a":
+            #     os.system('cls' if os.name == 'nt' else 'clear') 
+            #     print("========== ATUR PENGULANGAN ==========")
+            #     print(f"Jumlah Repeats saat ini: {repeats}")
+            #     print("--------------------------------------")
+            #     try:
+            #         baru = int(input("Masukkan jumlah baru: "))
+            #         repeats = baru
+            #         print("\n✅ Berhasil diubah!")
+            #     except: 
+            #         print("\n❌ Input harus angka!")
+                    
+            #     time.sleep(1.0)
+
+            # elif jawab == "b":
+            #     os.system('cls' if os.name == 'nt' else 'clear')
+            #     print("========== PILIH MAHASISWA ==========")
+                
+            #     csv_files = glob.glob("data/Biodata_*.csv")
+            #     if not csv_files:
+            #         print("\n❌ File Biodata tidak ada! \nRun generate_instances.py dulu!")
+            #     else:
+            #         df_nama = pd.read_csv(csv_files[0], sep=";")
+            #         print(df_nama[['id', 'nama']].head(50).to_string(index=False))
+            #         print("-------------------------------------")
+            #         try:
+            #             mhs = int(input("Masukan ID Mahasiswa (Start Node): "))
+            #             if mhs < 0: print("\n❌ Tidak boleh negatif!")
+            #             else: start_node_id = mhs
+            #         except: pass
+                
+            #     input("\nTekan Enter untuk kembali...")
+
+            # elif jawab == "c":
+            #     os.system('cls' if os.name == 'nt' else 'clear')
+            #     print("========== ATUR JUMLAH SEED ==========")
+            #     print(f"Jumlah Seed saat ini: {n_seed}")
+            #     print("--------------------------------------")
+            #     try:
+            #         temp = int(input(f"Masukkan Jumlah Seed (Max 5): "))
+            #         if 1 <= temp <= 5: 
+            #             n_seed = temp
+            #             print("\n✅ Sip, seed diatur.")
+            #         else:
+            #             print("\n❌ Harus antara 1-5.")
+            #     except ValueError:
+            #         print("\n❌ Error: Input harus berupa angka bulat!")
+                
+            #     time.sleep(1.5)
+
+            # elif jawab == "d":
+            #     print("\nMEMULAI EKSPERIMEN...")
+            #     rows = [] 
+                
+            #     for n in Ns:
+            #         # Safety check start node
+            #         curr_start = start_node_id if start_node_id < n else 0
+            #         if curr_start != start_node_id:
+            #             print(f"[Info] N={n}, Start Node {start_node_id} kegedean. Reset ke 0.")
+                        
+            #         for r in range(repeats):
+            #             # Logic Seed Unik + Variasi
+            #             current_seed = base_seed + (r % n_seed)
+            #             filename = f"data/social_graph_N{n}_seed{current_seed}.json"
+                        
+            #             if not os.path.exists(filename):
+            #                 print(f"Skip {filename} (File tidak ditemukan)")
+            #                 continue
+                            
+            #             # LOAD JSON
+            #             with open(filename, "r") as f:
+            #                 data = json.load(f)
+                        
+            #             # Convert keys string -> int
+            #             adj_list = {int(k): v for k, v in data["graph_adj"].items()}
+            #             node_data = {int(k): v for k, v in data["node_data"].items()}
+                        
+            #             # Simpan ke cache buat visualisasi nanti (Key Unik: N + Seed)
+            #             key = f"N{n}_S{current_seed}"
+            #             graph_cache[key] = adj_list
+            #             node_data_cache[key] = node_data
+
+            #             # RUN ALGO
+            #             dA, hasilA = run_once(dfs_trans, adj_list, curr_start, {}, curr_start)
+            #             dB, hasilB = run_once(bfs_trans, adj_list, curr_start, {}, curr_start)
+                        
+            #             rows.append({'n': n, 'repeat': r, 'algo': 'DFS', 'time_ms': dA})
+            #             rows.append({'n': n, 'repeat': r, 'algo': 'BFS', 'time_ms': dB})
+                        
+            #             # Simpan Tree buat visualisasi (simpan 1 sampel per seed unik)
+            #             if r < n_seed:
+            #                 tree_dfs[key] = hasilA
+            #                 tree_bfs[key] = hasilB
+                            
+            #             print(f"-> N={n} Seed={current_seed} | Rep={r+1} | DFS={dA:.2f}ms BFS={dB:.2f}ms")
+
+            #     # Simpan hasil ke CSV
+            #     df = pd.DataFrame(rows)
+            #     df.to_csv('results/experiment_raw.csv', index=False)
+                
+            #     # Simpan Summary
+            #     summary = df.groupby(['algo', 'n']).agg(
+            #         mean=('time_ms', 'mean'), 
+            #         median=('time_ms', 'median'), 
+            #         sd=('time_ms', 'std')
+            #     ).reset_index()
+            #     summary.to_csv('results/summary.csv', index=False)
+                
+            #     # Simpan ke Latex
+            #     with open('results/summary.tex', 'w') as f: f.write(summary.to_latex(index=False))
+
+            #     print("\n✅ Eksperimen Selesai! Data tersimpan di folder 'results/'.")
+            #     print("Masuk ke Menu Hasil...")
+            #     time.sleep(5)
+                
+            #     # SUB-MENU HASIL
+            #     while True:
+            #         os.system('cls' if os.name == 'nt' else 'clear')
+                    
+            #         print("========== MENU HASIL ==========")
+            #         print("A. Lihat Tabel Raw Data")
+            #         print("B. Lihat Summary")
+            #         print("C. Visualisasi (Graph/Tree)")
+            #         print("D. Plot Grafik Perbandingan")
+            #         print("E. Kembali ke Menu Utama")
+            #         print("================================")
+                    
+            #         sub = input(">> ").lower()
+                    
+            #         if sub == "a": 
+            #             os.system('cls' if os.name == 'nt' else 'clear')
+            #             print("==============================")
+            #             print("---------- RAW DATA ----------")
+            #             print("==============================")
+            #             print(df)
+            #             input("\nTekan 'Enter' untuk kembali...")
+                        
+            #         elif sub == "b": 
+            #             os.system('cls' if os.name == 'nt' else 'clear')
+            #             print("=======================================")
+            #             print("------------- SUMMARY DATA ------------")
+            #             print("=======================================")
+            #             print(summary)
+            #             input("\nTekan 'Enter' untuk kembali...")
+                    
+            #         elif sub == "c":
+            #             os.system('cls' if os.name == 'nt' else 'clear')
+            #             print("============ VISUALISASI ============")
+            #             print("A. Graph Sosial (Struktur Awal)")
+            #             print("B. Footprint DFS (Jalur Penelusuran)")
+            #             print("C. Footprint BFS (Jalur Penelusuran)")
+            #             print("D. Kembali ke Menu Utama")
+            #             print("=====================================")
+                        
+            #             vis_choice = input(">> ").lower()
+                        
+            #             if vis_choice == "d":
+            #                 break 
+                        
+            #             # Cek pilihan valid A/B/C
+            #             if vis_choice not in ["a", "b", "c"]:
+            #                 print("❌ Pilihan tidak valid.")
+            #                 time.sleep(1.0)
+            #                 continue
+                            
+            #             print("\n--- Pilihan Data ---")
+            #             print("Kunci Tersedia:", list(tree_dfs.keys()))
+            #             k = input("Masukkan Key (contoh N100_S121437): ")
+                        
+            #             if k not in tree_dfs:
+            #                 print("❌ Key salah atau data tidak ada.")
+            #                 input("Tekan 'Enter' untuk kembali...")
+            #                 continue
+                        
+            #             # Siapkan Data
+            #             # Parsing Key untuk ambil N dan Seed
+            #             parts = k.split("_") # ['N100', 'S121437']
+            #             n_val = parts[0]
+            #             s_val = parts[1]
+                        
+            #             # PILIHAN A: GRAPH SOSIAL
+            #             if vis_choice == "a":
+            #                 adj_list = graph_cache[k]
+            #                 ndata = node_data_cache[k]
+                            
+            #                 print(f"Sedang menggambar Graph Sosial {k}...")
+                            
+            #                 # Buat Graph dari Adjacency List
+            #                 G = nx.from_dict_of_lists(adj_list)
+                            
+            #                 # Ubah ID Angka jadi Nama Orang
+            #                 mapping = {node_id: info['nama'] for node_id, info in ndata.items()}
+            #                 G = nx.relabel_nodes(G, mapping)
+                            
+            #                 plt.figure(figsize=(15, 15))
+            #                 # Layout Spring
+            #                 pos = nx.spring_layout(G, k=0.3, iterations=50, seed=42) 
+                            
+            #                 nx.draw(G, pos, 
+            #                         with_labels=True, 
+            #                         node_size=300, 
+            #                         node_color='lightgreen', 
+            #                         edge_color='gray',
+            #                         font_size=8,
+            #                         font_weight='bold')
+                                
+            #                 plt.title(f"Social Graph Structure - {n_val} {s_val}", fontsize=20)
+            #                 plt.show()
+                        
+            #             # PILIHAN B/C: FOOTPRINT TREE
+            #             elif vis_choice in ["b", "c"]:
+            #                 algo_name = "DFS" if vis_choice == "b" else "BFS"
+            #                 tree_data = tree_dfs[k] if vis_choice == "b" else tree_bfs[k]
+                            
+            #                 # Panggil Fungsi v_graph
+            #                 v_graph(tree_data, n_val, s_val, algo_name, node_data_cache[k])
+
+            #         elif sub == "d":
+            #             os.system('cls' if os.name == 'nt' else 'clear')
+            #             print("Generating Plot...")
+            #             plt.figure(figsize=(10, 6))
+            #             for algo in ['DFS', 'BFS']:
+            #                 subset = summary[summary['algo'] == algo]
+            #                 plt.plot(subset['n'], subset['mean'], marker='o', label=algo, linewidth=2)
+                        
+            #             plt.legend()
+            #             plt.grid(True, linestyle='--', alpha=0.7)
+            #             plt.title("Perbandingan Waktu Eksekusi (DFS vs BFS)")
+            #             plt.xlabel("Jumlah Node (N)")
+            #             plt.ylabel("Rata-rata Waktu (ms)")
+            #             plt.show()
+                        
+            #         elif sub == "e": 
+            #             os.system('cls' if os.name == 'nt' else 'clear')
+            #             break
+                    
+            #         else: 
+            #             print("❌ Input tidak valid!")
+            #             time.sleep(1.5)
+
+            # elif jawab == "e":
+            #     os.system('cls' if os.name == 'nt' else 'clear')
+            #     print("\n" + "="*44)
+            #     print("   TERIMA KASIH SUDAH MENGGUNAKAN APP INI")
+            #     print("   Project by: Kelompok 2 DAA Kelas B")
+            #     print("   Babaii! 👋")
+            #     print("="*44 + "\n")
+            #     time.sleep(1.5) 
+            #     break
+            
+            # else:
+            #     print("❌ Input tidak valid! Harap pilih A, B, C, D, atau E.")
+            #     time.sleep(1.5)
